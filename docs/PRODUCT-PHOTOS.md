@@ -1,5 +1,7 @@
 # SHINY real product photo catalog — 22 October 2026
 
+Historical integration record. The current studio-only review, coverage and importer are described in [AUTOMATED-IMPORT.md](AUTOMATED-IMPORT.md); unsuitable primary images described below have since been quarantined.
+
 The default catalog now contains **70 real product lines**, all with authentic source photographs: 10 foundations, 10 lipsticks, and 5 each of blush, concealer, mascara, powder, highlighter, eyeliner, primer, moisturizer, and makeup remover. Five pre-existing IDs retain their identity; 65 new product lines were added. Unillustrated demonstration records were removed from the default catalog, rather than assigning them another product's photograph.
 
 **81 independently identified photographed SKUs** include 11 additional shade variants. Five lines support multiple photographed shades: Maybelline Fit Me Matte + Poreless, Catrice HD Liquid Coverage, e.l.f. Halo Glow Highlight Beauty Wand, Maybelline Lifter Gloss, and Maybelline SuperStay Matte Ink. Shade names and GTINs come from the source records; no hex colors or undertones were inferred from photographs. Not every manufacturer's shade is available in this source. Further variants require exact-shade licensed photographs and matching product identifiers.

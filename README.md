@@ -1,6 +1,6 @@
 # Shiny
 
-Latest implementation audit: [22 October 2026](docs/AUDIT-2026-10-22.md). Product data and integration requirements: [data contract](docs/DATA-CONTRACT.md).
+Current image import and pricing implementation: [automated imports](docs/AUTOMATED-IMPORT.md). Earlier implementation audit: [22 October 2026](docs/AUDIT-2026-10-22.md). Product data and integration requirements: [data contract](docs/DATA-CONTRACT.md).
 
 A responsive beauty and dupe comparison prototype for Azerbaijan, built with React, Vite, Tailwind CSS, and Lucide.
 
@@ -18,14 +18,14 @@ npm run preview -- --port 4173
 
 ## Project structure
 
-- `data/products.json`: all product, shade, store, price, and dupe sample data. Covers all 12 categories.
+- `data/products.json`: 70 sourced products, shades, offers and review states across all 12 categories.
 - `src/i18n.js`: Azerbaijani, English, and Cyrillic Russian UI dictionaries and AZN formatting.
 - `src/components/`: Navbar, ProductCard, FilterSidebar, ProductModal, DupeSection.
-- `public/products/`: neutral local image placeholders. Previously generated branded packaging has been removed.
+- `public/products/`: licensed original/optimized product photographs and clean placeholders. Rejected community photos are quarantined.
 
 Search includes product names, brands, all localized category names, and descriptions. Skin and tier selections use OR within a group and AND between groups. Favorites and language preference persist in LocalStorage; the application still works if storage is unavailable. Dialogs support Escape, keyboard focus containment, and backdrop dismissal.
 
-All prices, store availability, and similarity percentages are demonstration data, not verified commercial offers. Store URLs are placeholders and intentionally have no purchase action. Dupe matches are editorial samples, not ingredient or clinical comparisons. No credentials or backend services are required.
+The current production catalog has zero verified retailer prices; all 70 show an explicit unavailable message until retailer data arrives. Verified offers imported from authorized AZN retailer feeds produce real purchase links and exact-variant price comparisons. Legacy sample stores and user reference prices are labeled separately. No supplier credentials are needed for the included licensed studio-image subset; other feeds may need permission or API credentials.
 
 ## Validation
 
@@ -33,7 +33,7 @@ Production build and Chromium functional checks cover catalog rendering, search,
 
 ## Product admin editor
 
-Open the settings icon in the navigation or append `/#admin` to the site address. The editor supports product names/brands, base prices, main images, per-shade colors/names/undertones/images/optional prices, and store prices, dates, and availability. Choose a shade in the product dialog to see its image and optional price; variants without overrides inherit the main image and price.
+Open the settings icon in the navigation or append `/#admin` to the site address. The editor supports product names/brands, base prices, main images, per-shade colors/names/undertones/images/optional prices, and store prices, dates, and availability. Choose a shade in the product dialog to see its image and optional price; missing shade photos use placeholders, and a default-variant reference price is not reused for a different shade or size.
 
 Images can be HTTPS URLs or JPEG/PNG/WebP uploads up to 8 MB. Uploads are resized to a maximum of 1000 pixels and stored as WebP. Changes are saved explicitly in LocalStorage, with visible errors if storage is full or unavailable. Product switching, export, and navigation prompt before discarding unsaved work. Restoring the sample catalog requires confirmation.
 
@@ -75,7 +75,7 @@ See [the audit](docs/AUDIT.md) for existing features, completed work and outstan
 
 The existing visual design is retained. The catalog now displays 18 items per page when needed, supports indexed/deferred search and unknown prices, and derives available minimum prices consistently from verified offers. The saved catalog is no longer restricted to the original 15 product IDs. Corrupt data is preserved for download instead of crashing the product cards.
 
-The admin has a validated JSON import with new/update preview and atomic upsert. New IDs need product provenance and photo rights metadata. No manufactured products were added to the production catalog; the 200-record scale workload is a labelled test fixture only. The production catalog still contains 15 samples and awaits authentic licensed assets and retailer data.
+The admin has a validated JSON import with new/update preview and atomic upsert. New IDs need product provenance and photo rights metadata. No manufactured products were added to the production catalog; the 200-record scale workload is a labelled test fixture only. The production catalog contains 70 real product lines. 41 have approved studio primary images (51 photographed SKUs), while 29 need suitable replacement images. All 70 still need verified retailer prices.
 
 ```sh
 npm run import:catalog -- /path/to/authorized-products.json
@@ -88,3 +88,16 @@ TEST_PRODUCTION=1 CHROMIUM_PATH=/usr/bin/chromium npm test
 ```
 
 `vercel.json` and `public/_headers` prepare caching for future deployments. Database-side filtering and shared authenticated administration remain external integration requirements; the present application uses static JSON and browser-local edits.
+
+## Automated image and price feed imports
+
+The existing admin panel includes CSV preview, row validation and an image/price verification dashboard. Authorized CSV/JSON supplier feeds support exact product/shade/size/GTIN matching; permission checks, bounded downloads and WebP optimization run through a local worker or the repository import workflow. No individual image uploads are required.
+
+```sh
+npm run import:feed -- data/studio-feed.csv # dry run
+npm run import:feed -- data/studio-feed.csv --write
+npm run import:server # local-only admin image download worker
+npm run audit:catalog
+```
+
+Read [the import guide](docs/AUTOMATED-IMPORT.md) for source registration, API field mapping, CSV columns, licensing, credentials, the GitHub workflow, and static-host limitations. The hosted admin saves browser-local edits; repository jobs write shared project data. A publicly hosted write API requires authenticated backend and storage configuration.

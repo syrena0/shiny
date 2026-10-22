@@ -1,0 +1,417 @@
+{
+  "generated_at": "2026-10-22T18:10:26.979Z",
+  "mode": "written",
+  "products": 70,
+  "rows": [
+    {
+      "row": 2,
+      "product_id": "prod-8",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 3,
+      "product_id": "prod-11",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 4,
+      "product_id": "prod-12",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "base"
+    },
+    {
+      "row": 5,
+      "product_id": "obf-0609332820050",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 6,
+      "product_id": "obf-0609332813373",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "base"
+    },
+    {
+      "row": 7,
+      "product_id": "obf-0800897003968",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 8,
+      "product_id": "obf-0800897129781",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 9,
+      "product_id": "obf-3600531324506",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 10,
+      "product_id": "obf-3600531324506",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-1"
+    },
+    {
+      "row": 11,
+      "product_id": "obf-3600530733842",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 12,
+      "product_id": "obf-4059729441973",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "base"
+    },
+    {
+      "row": 13,
+      "product_id": "obf-4059729447395",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 14,
+      "product_id": "obf-0773602544172",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 15,
+      "product_id": "obf-0607845023180",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "base"
+    },
+    {
+      "row": 16,
+      "product_id": "obf-4250947598283",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 17,
+      "product_id": "obf-4250947598283",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-1"
+    },
+    {
+      "row": 18,
+      "product_id": "obf-4250947598283",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-2"
+    },
+    {
+      "row": 19,
+      "product_id": "obf-3600522862529",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 20,
+      "product_id": "obf-3600523614431",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 21,
+      "product_id": "obf-4059729282026",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "base"
+    },
+    {
+      "row": 22,
+      "product_id": "obf-3616303397173",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "base"
+    },
+    {
+      "row": 23,
+      "product_id": "obf-0773602040605",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 24,
+      "product_id": "obf-3600531469498",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 25,
+      "product_id": "obf-3600531469498",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-1"
+    },
+    {
+      "row": 26,
+      "product_id": "obf-3600531469498",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-2"
+    },
+    {
+      "row": 27,
+      "product_id": "obf-3600523957408",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 28,
+      "product_id": "obf-0086100013614",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 29,
+      "product_id": "obf-3614273962100",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 30,
+      "product_id": "obf-30148093",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 31,
+      "product_id": "obf-3600521627402",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 32,
+      "product_id": "obf-4059729277084",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 33,
+      "product_id": "obf-30096592",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 34,
+      "product_id": "obf-30149649",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 35,
+      "product_id": "obf-3600531609726",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 36,
+      "product_id": "obf-3600531609726",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-1"
+    },
+    {
+      "row": 37,
+      "product_id": "obf-3600531609726",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-2"
+    },
+    {
+      "row": 38,
+      "product_id": "obf-0800897818586",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 39,
+      "product_id": "obf-4059729274953",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 40,
+      "product_id": "obf-4059729222978",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "base"
+    },
+    {
+      "row": 41,
+      "product_id": "obf-3380810185249",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 42,
+      "product_id": "obf-8682536043670",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 43,
+      "product_id": "obf-8690644003226",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 44,
+      "product_id": "obf-0044386120174",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 45,
+      "product_id": "obf-4059729514998",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 46,
+      "product_id": "obf-0609332844155",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 47,
+      "product_id": "obf-0609332844155",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-1"
+    },
+    {
+      "row": 48,
+      "product_id": "obf-0609332844155",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-2"
+    },
+    {
+      "row": 49,
+      "product_id": "obf-0609332844155",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "shade-3"
+    },
+    {
+      "row": 50,
+      "product_id": "obf-8710908371509",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "base"
+    },
+    {
+      "row": 51,
+      "product_id": "obf-3600531537289",
+      "status": "matched",
+      "reason": "Visual review required before primary use",
+      "image_status": "needs-review",
+      "variant_key": "shade-0"
+    },
+    {
+      "row": 52,
+      "product_id": "obf-4059729446794",
+      "status": "matched",
+      "reason": "Trusted studio feed; identity and background checks passed",
+      "image_status": "approved",
+      "variant_key": "base"
+    }
+  ],
+  "visual_review_completed_at": "2026-10-22T18:13:51.475Z",
+  "final_approved_SKUs": 51
+}

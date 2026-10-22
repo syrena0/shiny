@@ -11,7 +11,10 @@
     "typecheck": "tsc --noEmit",
     "import:catalog": "node scripts/import-catalog.mjs",
     "audit:assets": "node scripts/audit-assets.mjs",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "import:feed": "node scripts/import-feed.mjs",
+    "import:server": "node scripts/import-server.mjs",
+    "audit:catalog": "node scripts/audit-catalog.mjs"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.5.0",
@@ -21,7 +24,9 @@
     "motion": "^14.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwind-merge": "^3.7.0"
+    "sharp": "^0.35.5",
+    "tailwind-merge": "^3.7.0",
+    "undici": "^8.12.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",

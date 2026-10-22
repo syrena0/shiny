@@ -6,7 +6,7 @@ export default defineConfig({
  resolve:{alias:{'@':fileURLToPath(new URL('./src',import.meta.url))}},
  plugins:[tailwindcss(),{
   name:'attributed-catalog-download',
-  generateBundle(){for(const filename of ['products.json','photo-attribution.json'])this.emitFile({type:'asset',fileName:`data/${filename}`,source:readFileSync(new URL(`./data/${filename}`,import.meta.url),'utf8')});}
+  generateBundle(){for(const filename of ['products.json','photo-attribution.json','studio-feed.csv','verification-report.json'])this.emitFile({type:'asset',fileName:`data/${filename}`,source:readFileSync(new URL(`./data/${filename}`,import.meta.url),'utf8')});}
  }],
  esbuild:{jsx:'automatic'},
  build:{rollupOptions:{

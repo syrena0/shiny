@@ -1,8 +1,10 @@
+import imagePolicy from '../../data/image-policy.json' with {type:'json'};
 // Shared browser/CLI validation. No fixed product count or hard-coded product IDs.
 export const PRODUCT_CATEGORIES=['tonal_krem','blush','concealer','mascara','powder','highlighter','eyeliner','primer','moisturizer','makeup_remover','lipstick','lip_gloss'];
 export const MAX_CATALOG_RECORDS=20000;
 const placeholderAssets=new Set(['placeholder','cerave','charlotte','dior','elf','essence','fenty','garnier','mac','maybelline','nars','nyx','nyxliner','primer','rare','sheglam'].map(name=>`/products/${name}.svg`));
-export function isPlaceholderImage(src){return !src||placeholderAssets.has(src);}
+export function isPlaceholderImage(src){return !src||placeholderAssets.has(src)||rejectedImages.has(src);}
+const rejectedImages=new Set(imagePolicy.rejected_urls);
 const locales=['az','en','ru'];
 const text=v=>typeof v==='string'&&v.trim().length>0;
 const nullableNumber=(v,max=Infinity)=>v===null||(typeof v==='number'&&Number.isFinite(v)&&v>=0&&v<=max);
@@ -50,6 +52,8 @@ export function validateCatalog(input,{requireProvenance=false,checkReferences=t
     if(s.size!==undefined&&!text(s.size))add(index,'shade.size');
    });
   }
+  if(p.variants!==undefined&&(!Array.isArray(p.variants)||!p.variants.length||p.variants.some(v=>!v||!text(v.id)||!(v.shade===null||text(v.shade))||v.size!==undefined&&!text(v.size)||v.images!==undefined&&(!Array.isArray(v.images)||!v.images.every(isAsset))||v.price_azn!==undefined&&!nullableNumber(v.price_azn))||new Set(p.variants.map(v=>v.id)).size!==p.variants.length||new Set(p.variants.map(v=>JSON.stringify([v.shade,v.size]))).size!==p.variants.length))add(index,'variants');
+  if(p.default_variant!==undefined&&(!Array.isArray(p.variants)||!p.variants.some(v=>v.id===p.default_variant)))add(index,'default_variant');
   if(!Array.isArray(p.stores)||!p.stores.every(s=>s&&text(s.name)&&typeof s.price_azn==='number'&&nullableNumber(s.price_azn)&&typeof s.in_stock==='boolean'&&isCalendarDate(s.last_checked)))add(index,'stores');
   if(!Array.isArray(p.dupes)||!p.dupes.every(d=>d&&text(d.dupe_product_id)&&typeof d.match_percentage==='number'&&nullableNumber(d.match_percentage,100)&&d.reason&&locales.every(l=>typeof d.reason[l]==='string')))add(index,'dupes');
   if(p.offers!==undefined&&(!Array.isArray(p.offers)||!p.offers.every(o=>o&&typeof o==='object'&&!Array.isArray(o))))add(index,'offers');
@@ -58,8 +62,8 @@ export function validateCatalog(input,{requireProvenance=false,checkReferences=t
    if(!source||!isHttpsUrl(source.source_url)||!isCalendarDate(source.retrieved_at)||!text(source.license)||!['manufacturer','retailer','community'].includes(source.kind))add(index,'provenance');
    // Source-backed imports may not silently reuse arbitrary photos with no rights metadata.
    if(requireProvenance){
-    const assets=[...(Array.isArray(p.images)?p.images:[]),...(Array.isArray(p.shades)?p.shades:[]).flatMap(s=>Array.isArray(s?.images)?s.images:[])];
-    const direct=[p.image,...(Array.isArray(p.shades)?p.shades:[]).map(s=>s?.image)].filter(url=>typeof url==='string'&&url&&!isPlaceholderImage(url));
+    const assets=[...(Array.isArray(p.images)?p.images:[]),...[...(Array.isArray(p.shades)?p.shades:[]),...(Array.isArray(p.variants)?p.variants:[])].flatMap(s=>Array.isArray(s?.images)?s.images:[])];
+    const direct=[p.image,...[...(Array.isArray(p.shades)?p.shades:[]),...(Array.isArray(p.variants)?p.variants:[])].map(s=>s?.image)].filter(url=>typeof url==='string'&&url&&!isPlaceholderImage(url));
     if(assets.some(a=>typeof a==='string'||!a||!isHttpsUrl(a.sourceUrl)||!text(a.license))||direct.some(url=>!assets.some(a=>a&&typeof a==='object'&&a.url===url)))add(index,'image_rights');
    }
   }

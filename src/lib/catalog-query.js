@@ -1,4 +1,4 @@
-import {allVerifiedOffers} from './offers';
+import {allVerifiedOffers,catalogPrice} from './pricing';
 import {isPlaceholderImage} from './catalog-schema';
 import {dictionaries,premiumBrands} from '../i18n';
 export const PAGE_SIZE=18;
@@ -6,7 +6,7 @@ export function normalizedSearch(value){return String(value).normalize('NFKD').t
 export function indexCatalog(products){return products.map(product=>{
  const offers=allVerifiedOffers(product);
  return {product,search:normalizedSearch([product.name,product.brand,product.category,...Object.values(product.description),...product.shades.map(s=>s.name),...Object.values(dictionaries).map(d=>d[product.category])].join(' ')),
- offers,price:offers.length?Math.min(...offers.map(o=>o.price_azn)):product.price_azn,tier:product.brand_tier||(premiumBrands.includes(product.brand)?'premium':'affordable')};
+ offers,price:catalogPrice(product),tier:product.brand_tier||(premiumBrands.includes(product.brand)?'premium':'affordable')};
 });}
 export function queryCatalog(index,{view='discover',favorites=[],category='all',query='',filters,sort='recommended'}){
  const terms=normalizedSearch(query).split(' ').filter(Boolean),favoriteIds=new Set(favorites);

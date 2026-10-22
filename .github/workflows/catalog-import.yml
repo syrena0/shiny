@@ -1,0 +1,38 @@
+name: Import authorized product feed
+on:
+  workflow_dispatch:
+    inputs:
+      source_id:
+        description: Source ID from data/import-sources.json with a configured feed_url
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: catalog-import
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Download and validate feed
+        env:
+          SOURCE_ID: ${{ inputs.source_id }}
+        run: npm run import:feed -- --source "$SOURCE_ID" --write
+      - run: npm run audit:assets && npm run lint && npm run typecheck && npm run build
+      - name: Commit reviewed-source catalog updates
+        run: |
+          git config user.name "Shiny Catalog Import"
+          git config user.email "catalog-import@users.noreply.github.com"
+          git add data/products.json data/import-report.json public/products/imported
+          if ! git diff --cached --quiet; then
+            git commit -m "Import authorized catalog feed"
+            git push origin HEAD:main
+          fi

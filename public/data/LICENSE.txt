@@ -5,7 +5,7 @@ Database: Open Database License 1.0 (ODbL), https://opendatacommons.org/licenses
 Individual database contents: Database Contents License 1.0, https://opendatacommons.org/licenses/dbcl/1-0/
 Product photographs: Creative Commons Attribution-ShareAlike 3.0, https://creativecommons.org/licenses/by-sa/3.0/
 
-Photo contributors and exact source pages are listed in photo-attribution.json and on each sourced product's detail view. Photographs are unmodified copies of the source-selected front image; card previews and high-resolution versions retain source crops. No endorsement by the photographed brands is implied.
+Photo contributors and exact source pages are listed in photo-attribution.json and on each sourced product's detail view. Files under /products/authentic/ are unmodified source-selected photographs. Files under /products/imported/ are optimized derivatives: oriented, resized without cropping or enlargement, flattened on white and encoded as WebP. Their exact changes, original source hashes, attribution and licenses are recorded in the catalog asset metadata. No endorsement by the photographed brands is implied.
 
 The adapted catalog database is offered under ODbL 1.0 in products.json. The image licenses apply to the photographs, not to application source code. Original sample records are explicitly not verified retailer offers or sales rankings.
 

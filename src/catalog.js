@@ -1,3 +1,4 @@
+import {quarantineRejectedImages} from './lib/image-review';
 import {validateCatalog,isImageUrl,isPlaceholderImage} from './lib/catalog-schema';
 import seedProducts from '../data/products.json' with {type:'json'};
 import photoMigration from '../data/photo-migration.json' with {type:'json'};
@@ -6,7 +7,7 @@ export {seedProducts};
 export function readCatalog() {
   try {
     const raw=localStorage.getItem(CATALOG_KEY);
-    if(raw!==null){const saved=JSON.parse(raw);if(validateCatalog(saved).valid)return reconcileBundledPhotos(saved);}
+    if(raw!==null){const saved=JSON.parse(raw);if(validateCatalog(saved).valid)return quarantineRejectedImages(reconcileBundledPhotos(saved));}
   } catch { /* Preserve corrupt/unavailable storage; fall back without overwriting user data. */ }
   return structuredClone(seedProducts);
 }
