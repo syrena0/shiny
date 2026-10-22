@@ -6,16 +6,16 @@ export const CALENDAR_YEAR=2026;
 // These are editorial catalog selections, never asserted sales rankings.
 // Future/empty months retain exactly three empty slots. Add evidence before using `verified`.
 export const calendarMonths:CalendarMonth[]=[
- {month:1,kind:'editorial',productIds:['prod-13','prod-5','prod-1']},
- {month:2,kind:'editorial',productIds:['prod-3','prod-15','prod-6']},
- {month:3,kind:'editorial',productIds:['prod-2','prod-10','prod-14']},
- {month:4,kind:'editorial',productIds:['prod-4','prod-8','prod-12']},
- {month:5,kind:'editorial',productIds:['prod-1','prod-3','prod-5']},
- {month:6,kind:'editorial',productIds:['prod-9','prod-11','prod-6']},
- {month:7,kind:'editorial',productIds:['prod-2','prod-8','prod-10']},
- {month:8,kind:'editorial',productIds:['prod-12','prod-13','prod-14']},
- {month:9,kind:'editorial',productIds:['prod-7','prod-15','prod-4']},
- {month:10,kind:'editorial',productIds:['prod-3','prod-1','prod-13']},
+ {month:1,kind:'editorial',productIds:['obf-0810763030585','obf-0609332820050','obf-0773602544172']},
+ {month:2,kind:'editorial',productIds:['obf-3348901607339','obf-4059729447395','obf-4059729421937']},
+ {month:3,kind:'editorial',productIds:['obf-3600531324506','obf-0800897129781','obf-4250947516027']},
+ {month:4,kind:'editorial',productIds:['obf-0607845023180','obf-4250587735543','prod-11']},
+ {month:5,kind:'editorial',productIds:['obf-3348901614900','obf-0773602657070','obf-0609332820050']},
+ {month:6,kind:'editorial',productIds:['obf-0800897003968','obf-4059729302809','obf-4059729441973']},
+ {month:7,kind:'editorial',productIds:['obf-6902395970101','obf-0773602736850','obf-3600530733842']},
+ {month:8,kind:'editorial',productIds:['obf-0609332813373','obf-0041554217964','obf-4250587735543']},
+ {month:9,kind:'editorial',productIds:['obf-0773602544172','obf-0800897129781','prod-13']},
+ {month:10,kind:'editorial',productIds:['obf-3348901607339','obf-0810763030585','prod-14']},
  {month:11,kind:'coming-soon',productIds:[null,null,null]},
  {month:12,kind:'coming-soon',productIds:[null,null,null]},
 ];

@@ -13,7 +13,9 @@ function isAsset(asset){
  if(typeof asset==='string')return isImageUrl(asset);
  return !!asset&&typeof asset==='object'&&isImageUrl(asset.url)&&
   (asset.sourceUrl===undefined||isHttpsUrl(asset.sourceUrl))&&
+  (asset.detailUrl===undefined||isImageUrl(asset.detailUrl))&&
   (asset.license===undefined||text(asset.license))&&
+  (asset.licenseUrl===undefined||isHttpsUrl(asset.licenseUrl))&&
   (asset.width===undefined||Number.isInteger(asset.width)&&asset.width>0)&&
   (asset.height===undefined||Number.isInteger(asset.height)&&asset.height>0)&&
   (asset.sources===undefined||Array.isArray(asset.sources)&&asset.sources.every(s=>s&&isImageUrl(s.url)&&Number.isInteger(s.width)&&s.width>0));

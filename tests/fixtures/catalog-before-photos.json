@@ -1,0 +1,1034 @@
+[
+  {
+    "id": "prod-1",
+    "brand": "Fenty Beauty",
+    "name": "Eaze Drop Blurring Skin Tint",
+    "category": "tonal_krem",
+    "price_azn": 78,
+    "rating": 4.8,
+    "image": "/products/fenty.svg",
+    "skin_type": [
+      "quru",
+      "qarışıq"
+    ],
+    "finish": "natural",
+    "description": {
+      "az": "Fenty Beauty ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with Fenty Beauty. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 78,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 82,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 79.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 81,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": [
+      {
+        "dupe_product_id": "prod-2",
+        "reason": {
+          "az": "Oxşar alt ton və bitiş. Daha sərfəli qiymətə yüngül, rahat tekstura.",
+          "en": "Similar undertone and finish, with a lightweight texture at a friendlier price.",
+          "ru": "Похожий подтон и финиш, лёгкая текстура по более доступной цене."
+        },
+        "match_percentage": 92
+      }
+    ]
+  },
+  {
+    "id": "prod-2",
+    "brand": "SHEGLAM",
+    "name": "Skinfinite Hydrating Foundation",
+    "category": "tonal_krem",
+    "price_azn": 19,
+    "rating": 4.6,
+    "image": "/products/sheglam.svg",
+    "skin_type": [
+      "quru",
+      "qarışıq"
+    ],
+    "finish": "natural",
+    "description": {
+      "az": "SHEGLAM ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with SHEGLAM. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 19,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 23,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 20.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 22,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  },
+  {
+    "id": "prod-3",
+    "brand": "Rare Beauty",
+    "name": "Soft Pinch Liquid Blush",
+    "category": "blush",
+    "price_azn": 65,
+    "rating": 4.9,
+    "image": "/products/rare.svg",
+    "skin_type": [
+      "həssas",
+      "qarışıq"
+    ],
+    "finish": "radiant",
+    "description": {
+      "az": "Rare Beauty ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with Rare Beauty. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 65,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 69,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 66.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 68,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": [
+      {
+        "dupe_product_id": "prod-4",
+        "reason": {
+          "az": "Oxşar alt ton və bitiş. Daha sərfəli qiymətə yüngül, rahat tekstura.",
+          "en": "Similar undertone and finish, with a lightweight texture at a friendlier price.",
+          "ru": "Похожий подтон и финиш, лёгкая текстура по более доступной цене."
+        },
+        "match_percentage": 94
+      }
+    ]
+  },
+  {
+    "id": "prod-4",
+    "brand": "e.l.f.",
+    "name": "Camo Liquid Blush",
+    "category": "blush",
+    "price_azn": 16,
+    "rating": 4.7,
+    "image": "/products/elf.svg",
+    "skin_type": [
+      "həssas",
+      "qarışıq"
+    ],
+    "finish": "radiant",
+    "description": {
+      "az": "e.l.f. ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with e.l.f.. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 16,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 20,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 17.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 19,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  },
+  {
+    "id": "prod-5",
+    "brand": "Dior",
+    "name": "Addict Lip Glow Oil",
+    "category": "lip_gloss",
+    "price_azn": 89,
+    "rating": 4.8,
+    "image": "/products/dior.svg",
+    "skin_type": [
+      "quru",
+      "qarışıq"
+    ],
+    "finish": "glossy",
+    "description": {
+      "az": "Dior ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with Dior. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 89,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 93,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 90.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 92,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": [
+      {
+        "dupe_product_id": "prod-6",
+        "reason": {
+          "az": "Oxşar alt ton və bitiş. Daha sərfəli qiymətə yüngül, rahat tekstura.",
+          "en": "Similar undertone and finish, with a lightweight texture at a friendlier price.",
+          "ru": "Похожий подтон и финиш, лёгкая текстура по более доступной цене."
+        },
+        "match_percentage": 94
+      }
+    ]
+  },
+  {
+    "id": "prod-6",
+    "brand": "NYX",
+    "name": "Fat Oil Lip Drip",
+    "category": "lip_gloss",
+    "price_azn": 24,
+    "rating": 4.6,
+    "image": "/products/nyx.svg",
+    "skin_type": [
+      "quru",
+      "qarışıq"
+    ],
+    "finish": "glossy",
+    "description": {
+      "az": "NYX ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with NYX. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 24,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 28,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 25.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 27,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  },
+  {
+    "id": "prod-7",
+    "brand": "NARS",
+    "name": "Radiant Creamy Concealer",
+    "category": "concealer",
+    "price_azn": 62,
+    "rating": 4.7,
+    "image": "/products/nars.svg",
+    "skin_type": [
+      "qarışıq"
+    ],
+    "finish": "natural",
+    "description": {
+      "az": "NARS ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with NARS. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 62,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 66,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 63.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 65,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  },
+  {
+    "id": "prod-8",
+    "brand": "Maybelline",
+    "name": "Lash Sensational Sky High",
+    "category": "mascara",
+    "price_azn": 23,
+    "rating": 4.8,
+    "image": "/products/maybelline.svg",
+    "skin_type": [
+      "yağlı",
+      "qarışıq"
+    ],
+    "finish": "natural",
+    "description": {
+      "az": "Maybelline ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with Maybelline. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 23,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 27,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 24.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 26,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  },
+  {
+    "id": "prod-9",
+    "brand": "Charlotte Tilbury",
+    "name": "Airbrush Flawless Powder",
+    "category": "powder",
+    "price_azn": 85,
+    "rating": 4.8,
+    "image": "/products/charlotte.svg",
+    "skin_type": [
+      "yağlı",
+      "qarışıq"
+    ],
+    "finish": "matte",
+    "description": {
+      "az": "Charlotte Tilbury ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with Charlotte Tilbury. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 85,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 89,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 86.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 88,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  },
+  {
+    "id": "prod-10",
+    "brand": "Essence",
+    "name": "Pure Nude Highlighter",
+    "category": "highlighter",
+    "price_azn": 12,
+    "rating": 4.5,
+    "image": "/products/essence.svg",
+    "skin_type": [
+      "qarışıq"
+    ],
+    "finish": "radiant",
+    "description": {
+      "az": "Essence ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with Essence. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 12,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 16,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 13.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 15,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  },
+  {
+    "id": "prod-11",
+    "brand": "NYX",
+    "name": "Epic Ink Liner",
+    "category": "eyeliner",
+    "price_azn": 22,
+    "rating": 4.7,
+    "image": "/products/nyxliner.svg",
+    "skin_type": [
+      "yağlı",
+      "qarışıq"
+    ],
+    "finish": "matte",
+    "description": {
+      "az": "NYX ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with NYX. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 22,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 26,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 23.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 25,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  },
+  {
+    "id": "prod-12",
+    "brand": "e.l.f.",
+    "name": "Power Grip Primer",
+    "category": "primer",
+    "price_azn": 24,
+    "rating": 4.7,
+    "image": "/products/primer.svg",
+    "skin_type": [
+      "qarışıq"
+    ],
+    "finish": "natural",
+    "description": {
+      "az": "e.l.f. ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with e.l.f.. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 24,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 28,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 25.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 27,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  },
+  {
+    "id": "prod-13",
+    "brand": "CeraVe",
+    "name": "Moisturising Cream",
+    "category": "moisturizer",
+    "price_azn": 32,
+    "rating": 4.8,
+    "image": "/products/cerave.svg",
+    "skin_type": [
+      "həssas",
+      "qarışıq"
+    ],
+    "finish": "natural",
+    "description": {
+      "az": "CeraVe ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with CeraVe. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 32,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 36,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 33.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 35,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  },
+  {
+    "id": "prod-14",
+    "brand": "Garnier",
+    "name": "Micellar Cleansing Water",
+    "category": "makeup_remover",
+    "price_azn": 13,
+    "rating": 4.6,
+    "image": "/products/garnier.svg",
+    "skin_type": [
+      "həssas",
+      "qarışıq"
+    ],
+    "finish": "natural",
+    "description": {
+      "az": "Garnier ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with Garnier. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 13,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 17,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 14.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 16,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  },
+  {
+    "id": "prod-15",
+    "brand": "MAC",
+    "name": "Matte Lipstick Velvet Teddy",
+    "category": "lipstick",
+    "price_azn": 49,
+    "rating": 4.8,
+    "image": "/products/mac.svg",
+    "skin_type": [
+      "quru",
+      "qarışıq"
+    ],
+    "finish": "matte",
+    "description": {
+      "az": "MAC ilə gündəlik gözəllik rutininizi tamamlayın. Rahat tekstura və uzunmüddətli nəticə.",
+      "en": "Complete your everyday beauty routine with MAC. Comfortable texture and a lasting finish.",
+      "ru": "Дополните ежедневный уход за собой. Комфортная текстура и стойкий результат."
+    },
+    "shades": [
+      {
+        "name": "Shade 2",
+        "hex": "#F3D3BD",
+        "undertone": "neutral"
+      },
+      {
+        "name": "Shade 5",
+        "hex": "#E8B99A",
+        "undertone": "warm"
+      },
+      {
+        "name": "Shade 9",
+        "hex": "#B77B5A",
+        "undertone": "warm"
+      }
+    ],
+    "stores": [
+      {
+        "name": "Adore",
+        "price_azn": 49,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Sabina",
+        "price_azn": 53,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "Olivia",
+        "price_azn": 50.9,
+        "in_stock": false,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      },
+      {
+        "name": "İDEAL",
+        "price_azn": 52,
+        "in_stock": true,
+        "url": "#",
+        "last_checked": "2026-10-01"
+      }
+    ],
+    "dupes": []
+  }
+]

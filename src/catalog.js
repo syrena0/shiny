@@ -1,11 +1,12 @@
-import {validateCatalog,isImageUrl} from './lib/catalog-schema';
-import seedProducts from '../data/products.json';
+import {validateCatalog,isImageUrl,isPlaceholderImage} from './lib/catalog-schema';
+import seedProducts from '../data/products.json' with {type:'json'};
+import photoMigration from '../data/photo-migration.json' with {type:'json'};
 export const CATALOG_KEY = 'shiny-catalog-v1';
 export {seedProducts};
 export function readCatalog() {
   try {
     const raw=localStorage.getItem(CATALOG_KEY);
-    if(raw!==null){const saved=JSON.parse(raw);if(validateCatalog(saved).valid)return saved;}
+    if(raw!==null){const saved=JSON.parse(raw);if(validateCatalog(saved).valid)return reconcileBundledPhotos(saved);}
   } catch { /* Preserve corrupt/unavailable storage; fall back without overwriting user data. */ }
   return structuredClone(seedProducts);
 }
@@ -30,4 +31,29 @@ export async function uploadImage(file) {
 
 export function catalogStorageIssue(){
  try{const raw=localStorage.getItem(CATALOG_KEY);if(raw===null)return false;try{return !validateCatalog(JSON.parse(raw)).valid;}catch{return true;}}catch{return false;}
+}
+
+function legacyFingerprint(value){
+ let hash=2166136261;const text=JSON.stringify(value);
+ for(let index=0;index<text.length;index++)hash=Math.imul(hash^text.charCodeAt(index),16777619)>>>0;
+ return hash.toString(16).padStart(8,'0');
+}
+export function reconcileBundledPhotos(saved){
+ const savedById=new Map(saved.map(p=>[p.id,p]));
+ // Upgrade only legacy full-catalog snapshots, not an intentionally separate imported catalog.
+ if(!photoMigration.legacy_ids.every(id=>savedById.has(id)))return saved;
+ const defaults=new Map(seedProducts.map(p=>[p.id,p]));
+ const reconciled=seedProducts.map(product=>{
+  const previous=savedById.get(product.id);if(!previous)return structuredClone(product);
+  const baseline=photoMigration.fields[product.id];
+  const customImage=!isPlaceholderImage(previous.image)||(previous.images||[]).some(asset=>!isPlaceholderImage(typeof asset==='string'?asset:asset.url));
+  if(!baseline||customImage||isPlaceholderImage(product.image)||legacyFingerprint(previous.brand)!==baseline.brand||legacyFingerprint(previous.name)!==baseline.name)return previous;
+  const updated={...previous,image:product.image,images:structuredClone(product.images),provenance:structuredClone(product.provenance),gtin:product.gtin};
+  for(const [field,fingerprint] of Object.entries(baseline))if(legacyFingerprint(previous[field])===fingerprint)updated[field]=structuredClone(product[field]);
+  if(legacyFingerprint(previous.shades)===baseline.shades){if(product.default_shade)updated.default_shade=product.default_shade;else delete updated.default_shade;}
+  if(product.size&&!previous.size)updated.size=product.size;
+  return updated;
+ });
+ for(const previous of saved)if(!defaults.has(previous.id))reconciled.push(previous);
+ return validateCatalog(reconciled).valid?reconciled:saved;
 }

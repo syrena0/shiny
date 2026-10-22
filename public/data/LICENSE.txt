@@ -1,0 +1,14 @@
+Shiny product catalog and product photographs
+
+Contains data from Open Beauty Facts: https://world.openbeautyfacts.org/
+Database: Open Database License 1.0 (ODbL), https://opendatacommons.org/licenses/odbl/1-0/
+Individual database contents: Database Contents License 1.0, https://opendatacommons.org/licenses/dbcl/1-0/
+Product photographs: Creative Commons Attribution-ShareAlike 3.0, https://creativecommons.org/licenses/by-sa/3.0/
+
+Photo contributors and exact source pages are listed in photo-attribution.json and on each sourced product's detail view. Photographs are unmodified copies of the source-selected front image; card previews and high-resolution versions retain source crops. No endorsement by the photographed brands is implied.
+
+The adapted catalog database is offered under ODbL 1.0 in products.json. The image licenses apply to the photographs, not to application source code. Original sample records are explicitly not verified retailer offers or sales rankings.
+
+Source licensing terms checked on 22 October 2026:
+https://world.openbeautyfacts.org/data
+https://world.openbeautyfacts.org/terms-of-use

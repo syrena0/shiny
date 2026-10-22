@@ -1,4 +1,5 @@
 import {allVerifiedOffers} from './offers';
+import {isPlaceholderImage} from './catalog-schema';
 import {dictionaries,premiumBrands} from '../i18n';
 export const PAGE_SIZE=18;
 export function normalizedSearch(value){return String(value).normalize('NFKD').toLowerCase().replace(/\p{M}/gu,'').replace(/ı/g,'i').replace(/\s+/g,' ').trim();}
@@ -24,6 +25,6 @@ export function queryCatalog(index,{view='discover',favorites=[],category='all',
    if(a.price===null)return b.price===null?0:1;if(b.price===null)return -1;
    return sort==='priceAsc'?a.price-b.price:b.price-a.price;
   }
-  return sort==='topRated'?(b.product.rating??-1)-(a.product.rating??-1):0;
+  return sort==='topRated'?(b.product.rating??-1)-(a.product.rating??-1):Number(!isPlaceholderImage(b.product.image))-Number(!isPlaceholderImage(a.product.image));
  }).map(row=>row.product);
 }

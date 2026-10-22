@@ -1,5 +1,9 @@
 import {test,expect} from '@playwright/test';
-test.beforeEach(async({page})=>{await page.addInitScript(()=>localStorage.setItem('shiny-language','"en"'));});
+import {readFileSync} from 'node:fs';
+const legacy=JSON.parse(readFileSync(new URL('./fixtures/catalog-before-photos.json',import.meta.url),'utf8'));
+const bundled=JSON.parse(readFileSync(new URL('../data/products.json',import.meta.url),'utf8'));
+
+test.beforeEach(async({page})=>{await page.addInitScript(()=>localStorage.setItem('shiny-language','"en"'));await page.addInitScript(p=>{if(!sessionStorage.getItem('admin-fixture')){localStorage.setItem('shiny-catalog-v1',JSON.stringify([{...p,dupes:[]}]));sessionStorage.setItem('admin-fixture','1')}},legacy[0]);});
 test('edit catalog, upload shade image, persist, and export',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/#admin');await expect(page.getByRole('heading',{name:'Product management'})).toBeVisible();
@@ -26,7 +30,7 @@ test('unsaved guards, shade operations, validation and confirmed restore',async(
  await page.getByRole('button',{name:'Back to shop'}).click();await expect(page.getByRole('alertdialog')).toBeVisible();await page.getByRole('button',{name:'Keep editing'}).click();await expect(page.getByLabel('Product name',{exact:true})).toHaveValue('Changed product');
  await page.getByRole('button',{name:'Add shade',exact:true}).click();await expect(page.locator('.admin-shade')).toHaveCount(4);await page.locator('.shade-delete').last().click();await expect(page.locator('.admin-shade')).toHaveCount(3);
  await page.getByLabel('Product price (AZN)',{exact:true}).fill('-1');await page.getByRole('button',{name:'Save changes',exact:true}).click();await expect(page.getByRole('alert')).toContainText('Check prices');
- await page.getByLabel('Product price (AZN)',{exact:true}).fill('50');await page.getByRole('button',{name:'Save changes',exact:true}).click();await page.getByRole('button',{name:'Restore sample catalog'}).click();await page.getByRole('button',{name:'Cancel',exact:true}).click();await expect(page.getByLabel('Product price (AZN)',{exact:true})).toHaveValue('50');await page.getByRole('button',{name:'Restore sample catalog'}).click();await page.getByRole('button',{name:'Yes, restore'}).click();await expect(page.getByLabel('Product price (AZN)',{exact:true})).toHaveValue('78');
+ await page.getByLabel('Product price (AZN)',{exact:true}).fill('50');await page.getByRole('button',{name:'Save changes',exact:true}).click();await page.getByRole('button',{name:'Restore sample catalog'}).click();await page.getByRole('button',{name:'Cancel',exact:true}).click();await expect(page.getByLabel('Product price (AZN)',{exact:true})).toHaveValue('50');await page.getByRole('button',{name:'Restore sample catalog'}).click();await page.getByRole('button',{name:'Yes, restore'}).click();await expect(page.getByLabel('Product price (AZN)',{exact:true})).toHaveValue(bundled[0].price_azn===null?'':String(bundled[0].price_azn));
 });
 test('storage failures keep draft and do not claim success',async({page})=>{
  await page.goto('/#admin');await page.evaluate(()=>{const original=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(k==='shiny-catalog-v1')throw new DOMException('Quota','QuotaExceededError');return original.call(this,k,v)}});
@@ -37,5 +41,5 @@ test('mobile admin and catalog remain usable in all languages',async({page})=>{
  await page.locator('.language select').selectOption('az');await expect(page.locator('.admin-header h1')).toHaveText('Məhsul idarəetməsi');await page.locator('.language select').selectOption('ru');await expect(page.locator('.admin-header h1')).toHaveText('Управление товарами');await page.screenshot({path:'/tmp/shiny-admin-mobile.png',fullPage:true});
 });
 test('catalog search, sorting and favorites still work',async({page})=>{
- await page.goto('/');await expect(page.locator('.product-card')).toHaveCount(15);await page.locator('.catalog-search input').fill('Fenty');await expect(page.locator('.product-card')).toHaveCount(1);await page.locator('.favorite-button').click();await page.reload();await expect(page.locator('.favorite-button.selected')).toHaveCount(1);await page.getByLabel('Sort by',{exact:true}).selectOption('priceAsc');await expect(page.locator('.product-card').first()).toContainText('Pure Nude');await page.locator('.catalog-search input').fill('Blush');await expect(page.locator('.product-card')).toHaveCount(2);
+ await page.goto('/');await page.evaluate(()=>localStorage.removeItem('shiny-catalog-v1'));await page.reload();await expect(page.locator('.product-card')).toHaveCount(18);await page.locator('.catalog-search input').fill('Stunna');await expect(page.locator('.product-card')).toHaveCount(1);await page.locator('.favorite-button').click();await page.reload();await page.locator('.catalog-search input').fill('Stunna');await expect(page.locator('.favorite-button.selected')).toHaveCount(1);await page.getByLabel('Sort by',{exact:true}).selectOption('priceAsc');await expect(page.locator('.product-card').first()).toContainText('Stunna');await page.locator('.catalog-search input').fill('Blush');await expect(page.locator('.product-card')).toHaveCount(5);
 });
