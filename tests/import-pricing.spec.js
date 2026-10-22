@@ -77,3 +77,7 @@ test('enriching one shade size or adding another size preserves every existing s
  const enriched=planFeedImport([row()],[p],registry);expect(enriched.valid).toBe(true);expect(productVariants(enriched.products[0])).toHaveLength(2);expect(productVariants(enriched.products[0])[0].size).toBe('30 ml');expect(productVariants(enriched.products[0])[1].shade).toBe('Test B');
  const sized=planFeedImport([row({gtin:'1234567890125',size:'50 ml'})],enriched.products,registry);expect(sized.valid).toBe(true);expect(productVariants(sized.products[0]).map(v=>[v.shade,v.size])).toEqual([['Test A','30 ml'],['Test B',undefined],['Test A','50 ml']]);
 });
+
+test('dashboard hash links work from an already open storefront and browser Back returns to shop',async({page})=>{
+ await page.goto('/');await page.goto('/#admin');await expect(page.locator('.verification-panel')).toBeVisible();await page.goBack();await expect(page.locator('.admin-page')).toHaveCount(0);await expect(page.locator('.product-card')).toHaveCount(18);
+});
