@@ -8,7 +8,10 @@
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "test": "playwright test",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "import:catalog": "node scripts/import-catalog.mjs",
+    "audit:assets": "node scripts/audit-assets.mjs",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.5.0",
@@ -21,11 +24,15 @@
     "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.5",
     "@playwright/test": "^1.64.1",
     "@tailwindcss/vite": "^4.0.0",
     "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^17.13.0",
     "tailwindcss": "^4.0.0",
     "typescript": "^7.0.2",
     "vite": "^6.1.0"

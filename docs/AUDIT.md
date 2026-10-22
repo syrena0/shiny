@@ -1,5 +1,7 @@
 # Shiny feature audit — 22 October 2026
 
+Historical calendar-integration snapshot. See the [latest complete audit](AUDIT-2026-10-22.md) for the subsequent fixes and validation results.
+
 Scope: inspected and incrementally updated the existing React/Vite checkout; did not rebuild the site. The supplied 21st.dev flip-card reference is used for the twelve month chocolates. No candy-box image or product-detail reference screenshots were attached, so the written visual specification informed the illustration. This report concerns the local source/build, not a deployment to the supplied Vercel site.
 
 | Area | Before | Result / remaining dependency |

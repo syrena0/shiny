@@ -1,21 +1,18 @@
+import {validateCatalog,isImageUrl} from './lib/catalog-schema';
 import seedProducts from '../data/products.json';
 export const CATALOG_KEY = 'shiny-catalog-v1';
 export {seedProducts};
 export function readCatalog() {
   try {
-    const saved = JSON.parse(localStorage.getItem(CATALOG_KEY));
-    // Only accept a complete catalog with our known product IDs and structure.
-    if (Array.isArray(saved) && saved.length === seedProducts.length &&
-      seedProducts.every(p => saved.some(s => s.id === p.id)) &&
-      saved.every(p => typeof p.name === 'string' && typeof p.brand === 'string' &&
-        Number.isFinite(p.price_azn) && p.price_azn >= 0 && typeof p.image === 'string' &&
-        Array.isArray(p.shades) && p.shades.length > 0 && p.shades.every(s => /^#[0-9a-f]{6}$/i.test(s.hex)) &&
-        Array.isArray(p.stores) && Array.isArray(p.dupes) && p.description && Array.isArray(p.skin_type))) return saved;
-  } catch { /* Fall back to the bundled catalog when browser storage is unavailable. */ }
+    const raw=localStorage.getItem(CATALOG_KEY);
+    if(raw!==null){const saved=JSON.parse(raw);if(validateCatalog(saved).valid)return saved;}
+  } catch { /* Preserve corrupt/unavailable storage; fall back without overwriting user data. */ }
   return structuredClone(seedProducts);
 }
-export function safeImage(value) {
-  return /^https:\/\/[^\s]+$/i.test(value) || /^\/products\/[\w.-]+$/.test(value) || /^data:image\/(jpeg|png|webp);base64,[a-z0-9+/=]+$/i.test(value);
+export const safeImage=isImageUrl;
+export function saveCatalogData(products){
+ const result=validateCatalog(products);if(!result.valid)throw new Error('invalidCatalog');
+ localStorage.setItem(CATALOG_KEY,JSON.stringify(products));
 }
 export async function uploadImage(file) {
   if (!file || !['image/jpeg','image/png','image/webp'].includes(file.type)) throw new Error('imageType');
@@ -29,4 +26,8 @@ export async function uploadImage(file) {
     canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
     return canvas.toDataURL('image/webp', .82);
   } finally { URL.revokeObjectURL(url); }
+}
+
+export function catalogStorageIssue(){
+ try{const raw=localStorage.getItem(CATALOG_KEY);if(raw===null)return false;try{return !validateCatalog(JSON.parse(raw)).valid;}catch{return true;}}catch{return false;}
 }

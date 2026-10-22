@@ -1,5 +1,7 @@
 # Shiny
 
+Latest implementation audit: [22 October 2026](docs/AUDIT-2026-10-22.md). Product data and integration requirements: [data contract](docs/DATA-CONTRACT.md).
+
 A responsive beauty and dupe comparison prototype for Azerbaijan, built with React, Vite, Tailwind CSS, and Lucide.
 
 ## Develop
@@ -67,3 +69,22 @@ A product or shade may provide `images: [url, ...]` or objects containing `{url,
 A future feed can supply `product.offers` entries with `market: "AZ"`, `currency: "AZN"`, `id`, `name`, `shade`, `size`, `price_azn`, `verified: true`, HTTPS `url` and `sourceUrl`, `last_checked` (YYYY-MM-DD), nullable booleans `online_available` / `physical_available`, and optional `location`. Only offers for the selected exact shade and size are shown, sorted by price. The upstream importer is responsible for factual verification. Legacy `stores` remain sample-only and are not used to claim verified availability or purchase links.
 
 See [the audit](docs/AUDIT.md) for existing features, completed work and outstanding real-data requirements.
+
+
+## Catalog audit fixes and scale support
+
+The existing visual design is retained. The catalog now displays 18 items per page when needed, supports indexed/deferred search and unknown prices, and derives available minimum prices consistently from verified offers. The saved catalog is no longer restricted to the original 15 product IDs. Corrupt data is preserved for download instead of crashing the product cards.
+
+The admin has a validated JSON import with new/update preview and atomic upsert. New IDs need product provenance and photo rights metadata. No manufactured products were added to the production catalog; the 200-record scale workload is a labelled test fixture only. The production catalog still contains 15 samples and awaits authentic licensed assets and retailer data.
+
+```sh
+npm run import:catalog -- /path/to/authorized-products.json
+npm run import:catalog -- /path/to/authorized-products.json --write
+npm run lint
+npm run typecheck
+npm run audit:assets
+npm run build
+TEST_PRODUCTION=1 CHROMIUM_PATH=/usr/bin/chromium npm test
+```
+
+`vercel.json` and `public/_headers` prepare caching for future deployments. Database-side filtering and shared authenticated administration remain external integration requirements; the present application uses static JSON and browser-local edits.
