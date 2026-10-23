@@ -37,11 +37,11 @@ export function comparisonOffers(product,shade,size){
  });
  const base=numericPrice(product.price_azn);
  // Keep the owner's base price visible without claiming a retailer verified it.
- if(!byStore.size&&base!==null){
+ if(!byStore.size&&base!==null&&base>0){
   const primary=retailers[0];
   byStore.set(storeKey(primary.name),{
    id:'product-base-reference',name:primary.name,price_azn:base,price_scope:'reference',
-   verified:false,url:null,online_available:null,physical_available:null,
+   verified:false,url:primary.url,online_available:null,physical_available:null,
   });
  }
  return [...byStore.values()].sort((a,b)=>a.price_azn-b.price_azn);

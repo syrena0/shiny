@@ -24,7 +24,7 @@ export default function PriceComparison({product,shade,size,lang,t}:{product:{pr
     {!s.verified&&<small title={reference?copy.referenceNote:undefined}>{reference?copy.referenceNote:t.sample}</small>}
     <small>{c.online}: {availability(s.online_available)} · {c.physical}: {availability(s.physical_available)}</small>
     {s.location&&<p><MapPin size={12}/>{s.location}</p>}
-    <div className="offer-bottom"><small>{s.last_checked?`${t.checked}: ${s.last_checked}`:c.unknown}</small>{link&&<a href={link} target="_blank" rel="noopener noreferrer">{s.url?c.buy:copy.visitStore}<ExternalLink size={13}/></a>}</div>
+    <div className="offer-bottom"><small>{s.last_checked?`${t.checked}: ${s.last_checked}`:c.unknown}</small>{link&&<a href={link} target="_blank" rel="noopener noreferrer">{s.url&&!reference?c.buy:copy.visitStore}<ExternalLink size={13}/></a>}</div>
    </article>;
   })}</div>:<div className="no-verified-offers"><Info size={20}/><p>{c.noOffers}</p></div>}
   <div className="pending-retailers">{missingRetailers.map(r=><article key={r.id} className="pending-retailer"><b>{r.name}</b><span>{copy.noQuote}</span><a href={r.url} target="_blank" rel="noopener noreferrer">{copy.visitStore}<ExternalLink size={12}/></a></article>)}</div>

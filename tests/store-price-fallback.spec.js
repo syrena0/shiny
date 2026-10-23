@@ -1,6 +1,6 @@
 import {test,expect} from './test-base';
 import {readFileSync} from 'node:fs';
-import {comparisonOffers,verifiedOffers} from '../src/lib/pricing';
+import {comparisonOffers,verifiedOffers,productVariants} from '../src/lib/pricing';
 const seed=JSON.parse(readFileSync(new URL('../data/products.json',import.meta.url),'utf8'));
 const offer=(extra={})=>({id:'exact',name:'Olivia',market:'AZ',currency:'AZN',shade:'Shade A',size:'30 ml',price_azn:35,verified:true,url:'https://olivia.az/test-product',sourceUrl:'https://olivia.az/test-product',last_checked:'2026-01-01',online_available:true,physical_available:null,...extra});
 const store=(name,price_azn)=>({name,price_azn,in_stock:true,last_checked:'2026-01-01'});
@@ -56,12 +56,12 @@ test('prod-11 falls back to its base price and never marks the reference as veri
  expect(product.price_azn).toBe(19);
  for(const shade of [product.default_shade,'Another shade']){
   expect(comparisonOffers(product,shade,product.size)).toEqual([expect.objectContaining({
-   name:'Olivia',price_azn:19,price_scope:'reference',verified:false,url:null,
+   name:'Olivia',price_azn:19,price_scope:'reference',verified:false,url:'https://olivia.az/',
    online_available:null,physical_available:null,
   })]);
  }
  for(const price_azn of [null,undefined,-1,'invalid'])expect(comparisonOffers({price_azn},null)).toEqual([]);
- expect(comparisonOffers({price_azn:0},null)[0].price_azn).toBe(0);
+ expect(comparisonOffers({price_azn:0},null)).toEqual([]);
  expect(comparisonOffers({price_azn:'19.00'},null)[0].price_azn).toBe(19);
  const exact=fixture();exact.price_azn=19;
  expect(comparisonOffers(exact,'Shade A','30 ml').some(o=>o.price_scope==='reference')).toBe(false);
@@ -80,4 +80,46 @@ for(const width of [390,1440])test(`prod-11 displays an active reference price r
  await expect(page.locator('.pending-retailer')).toHaveCount(2);
  await page.locator('.modal-language').selectOption('az');await expect(row).toContainText('İstinad qiyməti');
  await page.locator('.modal-language').selectOption('ru');await expect(row).toContainText('Справочная цена');
+});
+
+test('all catalog products and variants get a linked base-price fallback when store prices are missing',()=>{
+ expect(seed).toHaveLength(70);
+ for(const product of seed){
+  expect(product.price_azn,product.id).toBeGreaterThan(0);
+  // Includes missing, null and empty store data from any future import/API record.
+  for(const empty of [undefined,null,[]]){
+   const unpriced={...product,stores:empty,offers:empty};
+   for(const variant of [...productVariants(product),{shade:'New shade',size:'New size'}]){
+    const offers=comparisonOffers(unpriced,variant.shade,variant.size);
+    expect(offers,product.id).toHaveLength(1);
+    expect(offers[0],product.id).toMatchObject({name:'Olivia',price_azn:product.price_azn,
+     url:'https://olivia.az/',price_scope:'reference',verified:false});
+   }
+  }
+ }
+ const added={id:'newly-imported-product',price_azn:27.5,shades:[],stores:[]};
+ expect(comparisonOffers(added,null)[0]).toMatchObject({price_azn:27.5,url:'https://olivia.az/'});
+});
+
+test('all 70 database-backed modals show a linked price row without explicit store or shade prices',async({page})=>{
+ test.setTimeout(120000);
+ const products=seed.map(p=>({...p,offers:[],stores:[],shades:p.shades.map(s=>{const copy={...s};delete copy.price_azn;return copy;})}));
+ await page.addInitScript(products=>{localStorage.setItem('shiny-catalog-v1',JSON.stringify(products));localStorage.setItem('shiny-language','"en"')},products);
+ // Use the database response directly so published-data reconciliation cannot mask missing offers.
+ await page.route('https://dmexjkfdvmyrpkclhbpy.supabase.co/rest/v1/products**',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(products)}));
+ const errors=[];page.on('pageerror',error=>errors.push(error.message));
+ await page.goto('/');
+ for(const product of products){
+  await page.evaluate(id=>{location.hash='product='+encodeURIComponent(id)},product.id);
+  await expect(page.locator('#product-title')).toHaveText(product.name);
+  const row=page.locator('#store-comparison .verified-offer');
+  await expect(row,product.id).toHaveCount(1);
+  await expect(row,product.id).toContainText(product.price_azn.toFixed(2)+' ₼');
+  await expect(row).toHaveAttribute('data-price-scope','reference');
+  await expect(row.getByRole('link')).toHaveAttribute('href','https://olivia.az/');
+  await expect(page.locator('.no-verified-offers')).toHaveCount(0);
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+ }
+ expect(errors).toEqual([]);
 });
