@@ -39,6 +39,8 @@ export function validateCatalog(input,{requireProvenance=false,checkReferences=t
   if(!p.description||!locales.every(l=>typeof p.description[l]==='string'))add(index,'description');
   if(!Array.isArray(p.skin_type)||!p.skin_type.every(s=>['quru','yağlı','qarışıq','həssas'].includes(s)))add(index,'skin_type');
   if(p.finish!==null&&!['natural','radiant','glossy','matte'].includes(p.finish))add(index,'finish');
+  if(p.coverage!==undefined&&!['light','medium','full'].includes(p.coverage))add(index,'coverage');
+  if(p.trait_source!==undefined&&(!p.trait_source||!isHttpsUrl(p.trait_source.url)||!isCalendarDate(p.trait_source.checked_at)))add(index,'trait_source');
   if(p.size!==undefined&&!text(p.size))add(index,'size');
   if(!Array.isArray(p.shades))add(index,'shades');
   else {

@@ -1,0 +1,80 @@
+[
+  {
+    "product_id": "obf-3600531324506",
+    "shade": "110 Porcelain",
+    "url": "https://olivia.az/tonal-krem-maybelline-fit-me-110-3600531423865",
+    "source_title": "Tonal Krem Maybelline Fit Me 110",
+    "source_sku": "00-00006764",
+    "price_azn": 16.49,
+    "size": "30 ml",
+    "online_available": true,
+    "checked_at": "2026-10-23",
+    "html_sha256": "0522b288be5b3347d3fed37f1cfc6e130a4edfb3c025a5e502287dc0a8e612fa",
+    "method": "Product JSON-LD cross-checked against visible current price and product attributes; physical store stock unknown"
+  },
+  {
+    "product_id": "obf-3600531324506",
+    "shade": "105 Natural Ivory",
+    "url": "https://olivia.az/tonal-krem-maybelline-fit-me-105-3600531423858",
+    "source_title": "Tonal Krem Maybelline Fit Me 105",
+    "source_sku": "00-00006774",
+    "price_azn": 16.49,
+    "size": "30 ml",
+    "online_available": true,
+    "checked_at": "2026-10-23",
+    "html_sha256": "23aaee8017b34c81f206505f767630a6259440c1020b46485c4e3a2b03dba8db",
+    "method": "Product JSON-LD cross-checked against visible current price and product attributes; physical store stock unknown"
+  },
+  {
+    "product_id": "obf-3600531324506",
+    "shade": "115 Ivory",
+    "url": "https://olivia.az/tonal-krem-maybelline-fit-me-115-3600531423872",
+    "source_title": "Tonal Krem Maybelline Fit Me 115",
+    "source_sku": "00-00004287",
+    "price_azn": 16.49,
+    "size": "30 ml",
+    "online_available": true,
+    "checked_at": "2026-10-23",
+    "html_sha256": "c71d6b599169d24d4dc09c6a4032b411d1b82c21bb756b94ca2ddac6f2743733",
+    "method": "Product JSON-LD cross-checked against visible current price and product attributes; physical store stock unknown"
+  },
+  {
+    "product_id": "obf-3600531609726",
+    "shade": "004 Silk",
+    "url": "https://olivia.az/dodaq-parladici-maybelline-lifter-gloss-004-3600531609726",
+    "source_title": "Dodaq parladıcısı Maybelline Lifter Gloss 004",
+    "source_sku": "00-00004331",
+    "price_azn": 16.79,
+    "size": "5,4ml",
+    "online_available": true,
+    "checked_at": "2026-10-23",
+    "html_sha256": "8c0654e174c01ef43f993cc06a139417eb1579d9284b884f7d101e49086fc740",
+    "method": "Product JSON-LD cross-checked against visible current price and product attributes; physical store stock unknown"
+  },
+  {
+    "product_id": "obf-3600531609726",
+    "shade": "2 Ice",
+    "url": "https://olivia.az/dodaq-parladici-maybelline-lifter-gloss-002-3600531609764",
+    "source_title": "Dodaq parladıcısı Maybelline Lifter Gloss 002",
+    "source_sku": "00-00004330",
+    "price_azn": 16.79,
+    "size": "5,4ml",
+    "online_available": true,
+    "checked_at": "2026-10-23",
+    "html_sha256": "71e48ced43cc31500ebd4e9dde5708565597bd1e4931e9dafa0a2f7643b288de",
+    "method": "Product JSON-LD cross-checked against visible current price and product attributes; physical store stock unknown"
+  },
+  {
+    "product_id": "prod-8",
+    "shade": "Very Black",
+    "url": "https://olivia.az/maybelline-sky-high-tus",
+    "source_title": "Tuş Maybelline Sky High Qara",
+    "source_sku": "00-00006151",
+    "price_azn": 20.29,
+    "size": "7,2ml",
+    "online_available": true,
+    "checked_at": "2026-10-23",
+    "html_sha256": "8378b314ab512ad46e0ef39a71d60a32bbf76f7ab985b83d080a2d06cb07fb1b",
+    "method": "Product JSON-LD cross-checked against visible current price and product attributes; physical store stock unknown"
+  }
+]

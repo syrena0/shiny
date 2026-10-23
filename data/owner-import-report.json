@@ -1,0 +1,43 @@
+{
+  "received_at": "2026-10-23",
+  "products": 70,
+  "owner_reference_prices": 70,
+  "optimized_uploaded_assets": 35,
+  "notes": [
+    {
+      "id": "prod-8",
+      "issue": "Uploaded Lash Sensational photo is not Sky High; retained exact licensed Sky High photo."
+    },
+    {
+      "id": "prod-13",
+      "issue": "Owner photo is a CeraVe cream tub; previous tube size removed until tub volume is verified."
+    },
+    {
+      "id": "obf-3348901607339",
+      "shade": "Rəngin adı 1",
+      "issue": "Owner-provided photograph; manufacturer shade code is unknown. No shade code inferred from pixels."
+    },
+    {
+      "id": "obf-3348901614900",
+      "shade": "Rəngin adı 1",
+      "issue": "Owner-provided photograph; manufacturer shade code is unknown. No shade code inferred from pixels."
+    },
+    {
+      "id": "obf-3348901614900",
+      "shade": "Rəngin adı 2",
+      "issue": "Owner-provided photograph; manufacturer shade code is unknown. No shade code inferred from pixels."
+    },
+    {
+      "id": "obf-6902395970101",
+      "issue": "Rejected promotional shade image showing 120 for product 125; used owner main photograph labelled 125."
+    },
+    {
+      "id": "obf-4059729518613",
+      "issue": "Owner changed Essence brand to SHEGLAM; removed unrelated Essence barcode, source and volume. Exact model needs confirmation."
+    },
+    {
+      "id": "obf-0021457610105",
+      "issue": "Uploaded image is L.A. COLORS, not Lavera. Placeholder until matching studio image is supplied."
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+import publication from '../data/owner-publication.json' with {type:'json'};
+import {editMainImage} from './lib/product-edit';
 import {quarantineRejectedImages} from './lib/image-review';
 import {validateCatalog,isImageUrl,isPlaceholderImage} from './lib/catalog-schema';
 import seedProducts from '../data/products.json' with {type:'json'};
@@ -7,7 +9,7 @@ export {seedProducts};
 export function readCatalog() {
   try {
     const raw=localStorage.getItem(CATALOG_KEY);
-    if(raw!==null){const saved=JSON.parse(raw);if(validateCatalog(saved).valid)return quarantineRejectedImages(reconcileBundledPhotos(saved));}
+    if(raw!==null){const saved=JSON.parse(raw);if(validateCatalog(saved).valid)return quarantineRejectedImages(reconcilePublishedCatalog(reconcileBundledPhotos(saved)));}
   } catch { /* Preserve corrupt/unavailable storage; fall back without overwriting user data. */ }
   return structuredClone(seedProducts);
 }
@@ -35,7 +37,7 @@ export function catalogStorageIssue(){
 }
 
 function legacyFingerprint(value){
- let hash=2166136261;const text=JSON.stringify(value);
+ let hash=2166136261;const text=JSON.stringify(value??null);
  for(let index=0;index<text.length;index++)hash=Math.imul(hash^text.charCodeAt(index),16777619)>>>0;
  return hash.toString(16).padStart(8,'0');
 }
@@ -57,4 +59,22 @@ export function reconcileBundledPhotos(saved){
  });
  for(const previous of saved)if(!defaults.has(previous.id))reconciled.push(previous);
  return validateCatalog(reconciled).valid?reconciled:saved;
+}
+
+export function reconcilePublishedCatalog(saved){
+ const published=new Map(seedProducts.map(p=>[p.id,p]));
+ return saved.map(previous=>{
+  const current=published.get(previous.id),baseline=publication.fields[previous.id];
+  if(!current||!baseline)return previous;
+  if(['brand','name'].some(key=>previous[key]!==current[key]&&legacyFingerprint(previous[key])!==baseline[key]))return previous;
+  let result={...previous};
+  for(const key of new Set([...Object.keys(baseline),...Object.keys(current)])){
+   const unchanged=baseline[key]===undefined?previous[key]===undefined:legacyFingerprint(previous[key])===baseline[key];
+   if(unchanged){if(key in current)result[key]=structuredClone(current[key]);else delete result[key];}
+  }
+  // A custom main upload must not be hidden by a legacy default-shade gallery.
+  const first=result.shades.find(s=>s.name===result.default_shade)||result.shades[0];
+  if(result.image?.startsWith('data:image/')&&!first?.image?.startsWith('data:image/'))result=editMainImage(result,result.image);
+  return validateCatalog([result],{checkReferences:false}).valid?result:previous;
+ });
 }

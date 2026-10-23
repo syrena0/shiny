@@ -4,9 +4,10 @@ import ProductImage from './ProductImage';
 import {defaultVariant,productVariants,variantPrice} from '../lib/pricing';
 import {importCopy} from '../importI18n';
 import {auditCopy} from '../auditI18n';
-import {money,premiumBrands} from '../i18n';
+import {brandTier} from '../lib/product-traits';
+import {money} from '../i18n';
 export default function ProductCard({product:p,t,lang,favorite,toggleFavorite,onOpen}) {
- const premium=p.brand_tier?p.brand_tier==='premium':premiumBrands.includes(p.brand);
+ const premium=brandTier(p)==='premium';
  const variants=productVariants(p);const [variantKey,setVariantKey]=useState(()=>defaultVariant(p).key);
  const variant=variants.find(v=>v.key===variantKey)||defaultVariant(p),price=variantPrice(p,variant),amount=price.amount;
  const primary=variant.images?.[0]||variant.image||(variant.key===defaultVariant(p).key?(p.images?.[0]||p.image):'');

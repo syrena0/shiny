@@ -1,0 +1,53 @@
+[
+  {
+    "product_id": "obf-3600531324506",
+    "url": "https://www.maybelline.com/face-makeup/foundation-makeup/fit-me-matte-poreless-foundation",
+    "checked_at": "2026-10-23",
+    "supporting_claims": [
+      "normal to oily",
+      "safe for sensitive skin",
+      "medium coverage"
+    ],
+    "html_sha256": "310c3c2ba4582a087b82736cf07a1267be41fb9473c068ea3d9469f54eb604e5"
+  },
+  {
+    "product_id": "obf-3600530733842",
+    "url": "https://www.maybelline.com/face-makeup/concealer/instant-age-rewind-eraser-dark-circles-concealer-treatment",
+    "checked_at": "2026-10-23",
+    "supporting_claims": [
+      "all skin types, including sensitive skin",
+      "especially good for dry skin"
+    ],
+    "html_sha256": "b34c356d59d27a1f1918d999f653da64aa0b2afc3223b161e21be40f441255a5"
+  },
+  {
+    "product_id": "obf-30096592",
+    "url": "https://www.maybelline.com/face-makeup/concealer/fit-me-concealer",
+    "checked_at": "2026-10-23",
+    "supporting_claims": [
+      "all skin types",
+      "Finish: Natural"
+    ],
+    "html_sha256": "ccade6d0969fc9f37cabf12e106b247e10a8a4632f987c9cb462535e1735e41e"
+  },
+  {
+    "product_id": "obf-3600531384173",
+    "url": "https://www.maybelline.com/face-makeup/powder/fit-me-matte-poreless-powder",
+    "checked_at": "2026-10-23",
+    "supporting_claims": [
+      "normal to oily skin",
+      "for medium coverage"
+    ],
+    "html_sha256": "cd248bcd6505a03e35b15d0e4d9cfc20ea1db283cbc3de2730f08722bc00bbc3"
+  },
+  {
+    "product_id": "prod-12",
+    "url": "https://www.elfcosmetics.com/power-grip-primer/82846.html",
+    "checked_at": "2026-10-23",
+    "supporting_claims": [
+      "Power Grip Primer is suitable for oily, dry, and combination skin.",
+      "Hydrates skin for a dewy finish"
+    ],
+    "html_sha256": "933e162c43a1505ad21d09453f15821880cfd57a2ed135a1cb6ec8d8283c427d"
+  }
+]

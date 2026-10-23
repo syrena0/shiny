@@ -1,599 +1,208 @@
 {
-  "generated_at": "2026-10-22T18:13:51.522Z",
+  "generated_at": "2026-10-23T07:13:42.507Z",
   "products": 70,
-  "verified_price_products": 0,
-  "reference_price_products": 0,
-  "price_unavailable": [
-    {
-      "id": "prod-8",
-      "brand": "Maybelline",
-      "name": "Lash Sensational Sky High Mascara",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
+  "verified_price_products": 3,
+  "reference_price_products": 67,
+  "price_unavailable": [],
+  "approved_primary_images": 36,
+  "image_attention": [
     {
       "id": "prod-11",
       "brand": "NYX",
       "name": "Epic Ink Liner",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "prod-12",
-      "brand": "e.l.f.",
-      "name": "Power Grip Primer",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "prod-13",
       "brand": "CeraVe",
       "name": "Moisturising Cream",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "prod-14",
       "brand": "Garnier",
       "name": "Micellar Cleansing Water — All-in-1 Sensitive Skin",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-0810763030585",
       "brand": "Fenty Beauty",
       "name": "Stunna Lip Paint",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-0609332820050",
-      "brand": "e.l.f.",
-      "name": "Glow Reviver Lip Oil — Honey Talks",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-01678832",
       "brand": "e.l.f.",
       "name": "Eyeliner Pen — Coffee",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-0609332813373",
-      "brand": "e.l.f.",
-      "name": "No Budge Retractable Eyeliner",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-3348901607339",
       "brand": "Dior",
       "name": "Rouge Blush",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-3348901614900",
       "brand": "Dior",
       "name": "Forever Skin Glow Foundation",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-0800897003968",
-      "brand": "NYX",
-      "name": "Lip Lingerie XXL — 05 Strip’d Down",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-0800897129781",
-      "brand": "NYX",
-      "name": "Bare With Me Concealer Serum — 03 Vanilla",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-0800897183714",
       "brand": "NYX",
       "name": "Can’t Stop Won’t Stop Setting Powder",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-3600531324506",
-      "brand": "Maybelline",
-      "name": "Fit Me Matte + Poreless",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-6902395970101",
       "brand": "Maybelline",
       "name": "SuperStay Lumi-Matte Foundation — 125",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-3600530733842",
-      "brand": "Maybelline",
-      "name": "Instant Age Rewind Eraser — Light",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-0041554217964",
       "brand": "Maybelline",
       "name": "Volum’ Express The Falsies Mascara",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-4250947516027",
       "brand": "Essence",
       "name": "Lash Princess False Lash Effect Mascara — Black",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-4059729441973",
-      "brand": "Essence",
-      "name": "Call Me Queen False Lash Mascara",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-4059729447395",
-      "brand": "Essence",
-      "name": "Baby Got Blush Liquid Blush — 30 Dusty Rose",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-4059729421937",
       "brand": "Essence",
       "name": "Hydra Kiss Lip Oil — 03",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-4059729302809",
       "brand": "Essence",
       "name": "Extreme Shine Volume Lipgloss — 01 Crystal Clear",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-4250587735543",
       "brand": "Essence",
       "name": "All About Matt! Fixing Compact Powder",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-4250587772173",
       "brand": "Essence",
       "name": "Waterproof Eyeliner Pen — 01 Deep Black",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-0773602736850",
       "brand": "MAC",
       "name": "Studio Fix Powder Plus Foundation — NC13",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-0773602657070",
       "brand": "MAC",
       "name": "Studio Radiance 24HR Luminous Lift Concealer — NC11",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-0773602544172",
       "brand": "MAC",
       "name": "Matte Lipstick — 650 Soar",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-0607845023180",
-      "brand": "NARS",
-      "name": "Pure Radiant Tinted Moisturizer SPF 30",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-4250947598283",
       "brand": "Catrice",
       "name": "HD Liquid Coverage Foundation",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-3600522862529",
-      "brand": "L’Oréal Paris",
-      "name": "True Match Foundation",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-3600523614431",
-      "brand": "L’Oréal Paris",
-      "name": "Infaillible 32H Fresh Wear Foundation",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-4059729282026",
-      "brand": "Catrice",
-      "name": "True Skin Hydrating Foundation",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-0309975415018",
       "brand": "Revlon",
       "name": "ColorStay Foundation",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-3616303397173",
-      "brand": "Bourjois",
-      "name": "Healthy Mix Foundation",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-0773602040605",
-      "brand": "MAC",
-      "name": "Retro Matte Lipstick",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-3600531469498",
-      "brand": "Maybelline",
-      "name": "SuperStay Matte Ink",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-3600523957408",
-      "brand": "L’Oréal Paris",
-      "name": "Color Riche Intense Lipstick",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-0086100013614",
-      "brand": "Max Factor",
-      "name": "Lipfinity Lip Colour",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-3614273962100",
-      "brand": "Lancôme",
-      "name": "L’Absolu Rouge Drama Matte",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-30148093",
-      "brand": "Maybelline",
-      "name": "SuperStay Vinyl Ink",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-8690644035722",
       "brand": "Pastel",
       "name": "Profashion Matte Lipstick",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-3600521627402",
-      "brand": "L’Oréal Paris",
-      "name": "True Match Blush",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-4059729277084",
-      "brand": "Catrice",
-      "name": "True Skin High Cover Concealer",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-30096592",
-      "brand": "Maybelline",
-      "name": "Fit Me Concealer",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-30149649",
-      "brand": "L’Oréal Paris",
-      "name": "Panorama Mascara",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-3600531384173",
       "brand": "Maybelline",
       "name": "Fit Me Matte + Poreless Powder",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-3600531609726",
-      "brand": "Maybelline",
-      "name": "Lifter Gloss",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-0800897818586",
-      "brand": "NYX",
-      "name": "Butter Gloss",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-4059729274953",
-      "brand": "Catrice",
-      "name": "24H Brush Liner Waterproof Eyeliner",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-4059729518613",
-      "brand": "Essence",
+      "brand": "Sheglam",
       "name": "Birthday Primer",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-4059729222978",
-      "brand": "Catrice",
-      "name": "Ten!sational 10 in 1 Dream Primer",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-3380810185249",
-      "brand": "Clarins",
-      "name": "SOS Primer",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-0769915190762",
       "brand": "The Ordinary",
       "name": "High-Adherence Silicone Primer",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-8682536043670",
-      "brand": "Flormar",
-      "name": "Mood Booster Liquid Highlighter",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-8690644003226",
-      "brand": "Pastel",
-      "name": "Profashion Stardust Highlighter",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-0044386120174",
-      "brand": "Physicians Formula",
-      "name": "Butter Highlighter",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-4059729514998",
-      "brand": "Catrice",
-      "name": "Diamond Haze Highlighter",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-0609332844155",
-      "brand": "e.l.f.",
-      "name": "Halo Glow Highlight Beauty Wand",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-0302993917564",
       "brand": "Cetaphil",
       "name": "Moisturizing Cream",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-4005900009135",
       "brand": "NIVEA",
       "name": "Soft Moisturizing Cream",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-3337872418587",
       "brand": "La Roche-Posay",
       "name": "Lipikar AP+M Triple Repair Moisturizing Cream",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-0381371151059",
       "brand": "Aveeno",
       "name": "Eczema Therapy Daily Moisturizing Cream",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-3401395376935",
       "brand": "Bioderma",
       "name": "Sébium H2O Purifying Micellar Water",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-8710908371509",
-      "brand": "Simple",
-      "name": "Micellar Cleansing Water",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-9005800273464",
       "brand": "NIVEA",
       "name": "MicellAIR Skin Breathe Micellar Water",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-3600523329847",
       "brand": "L’Oréal Paris",
       "name": "Micellar Water",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-3600531537289",
       "brand": "Maybelline",
       "name": "Fit Me Blush",
-      "reason": "No verified AZN offer or catalog reference price"
+      "status": "pending"
     },
     {
       "id": "obf-4059729446794",
       "brand": "Essence",
       "name": "Blush Crush",
-      "reason": "No verified AZN offer or catalog reference price"
-    },
-    {
-      "id": "obf-0021457610105",
-      "brand": "Lavera",
-      "name": "Mineral Compact Powder",
-      "reason": "No verified AZN offer or catalog reference price"
-    }
-  ],
-  "approved_primary_images": 41,
-  "image_attention": [
-    {
-      "id": "prod-13",
-      "brand": "CeraVe",
-      "name": "Moisturising Cream",
-      "status": "missing"
-    },
-    {
-      "id": "prod-14",
-      "brand": "Garnier",
-      "name": "Micellar Cleansing Water — All-in-1 Sensitive Skin",
-      "status": "missing"
-    },
-    {
-      "id": "obf-0810763030585",
-      "brand": "Fenty Beauty",
-      "name": "Stunna Lip Paint",
-      "status": "missing"
-    },
-    {
-      "id": "obf-01678832",
-      "brand": "e.l.f.",
-      "name": "Eyeliner Pen — Coffee",
-      "status": "missing"
-    },
-    {
-      "id": "obf-3348901607339",
-      "brand": "Dior",
-      "name": "Rouge Blush",
-      "status": "missing"
-    },
-    {
-      "id": "obf-3348901614900",
-      "brand": "Dior",
-      "name": "Forever Skin Glow Foundation",
-      "status": "missing"
-    },
-    {
-      "id": "obf-0800897183714",
-      "brand": "NYX",
-      "name": "Can’t Stop Won’t Stop Setting Powder",
-      "status": "missing"
-    },
-    {
-      "id": "obf-6902395970101",
-      "brand": "Maybelline",
-      "name": "SuperStay Lumi-Matte Foundation — 125",
-      "status": "missing"
-    },
-    {
-      "id": "obf-0041554217964",
-      "brand": "Maybelline",
-      "name": "Volum’ Express The Falsies Mascara",
-      "status": "missing"
-    },
-    {
-      "id": "obf-4250947516027",
-      "brand": "Essence",
-      "name": "Lash Princess False Lash Effect Mascara — Black",
-      "status": "missing"
-    },
-    {
-      "id": "obf-4059729421937",
-      "brand": "Essence",
-      "name": "Hydra Kiss Lip Oil — 03",
-      "status": "missing"
-    },
-    {
-      "id": "obf-4059729302809",
-      "brand": "Essence",
-      "name": "Extreme Shine Volume Lipgloss — 01 Crystal Clear",
-      "status": "missing"
-    },
-    {
-      "id": "obf-4250587735543",
-      "brand": "Essence",
-      "name": "All About Matt! Fixing Compact Powder",
-      "status": "missing"
-    },
-    {
-      "id": "obf-4250587772173",
-      "brand": "Essence",
-      "name": "Waterproof Eyeliner Pen — 01 Deep Black",
-      "status": "missing"
-    },
-    {
-      "id": "obf-0773602736850",
-      "brand": "MAC",
-      "name": "Studio Fix Powder Plus Foundation — NC13",
-      "status": "missing"
-    },
-    {
-      "id": "obf-0773602657070",
-      "brand": "MAC",
-      "name": "Studio Radiance 24HR Luminous Lift Concealer — NC11",
-      "status": "missing"
-    },
-    {
-      "id": "obf-0309975415018",
-      "brand": "Revlon",
-      "name": "ColorStay Foundation",
-      "status": "missing"
-    },
-    {
-      "id": "obf-8690644035722",
-      "brand": "Pastel",
-      "name": "Profashion Matte Lipstick",
-      "status": "missing"
-    },
-    {
-      "id": "obf-3600531384173",
-      "brand": "Maybelline",
-      "name": "Fit Me Matte + Poreless Powder",
-      "status": "missing"
-    },
-    {
-      "id": "obf-4059729518613",
-      "brand": "Essence",
-      "name": "Birthday Primer",
-      "status": "missing"
-    },
-    {
-      "id": "obf-0769915190762",
-      "brand": "The Ordinary",
-      "name": "High-Adherence Silicone Primer",
-      "status": "missing"
-    },
-    {
-      "id": "obf-0302993917564",
-      "brand": "Cetaphil",
-      "name": "Moisturizing Cream",
-      "status": "missing"
-    },
-    {
-      "id": "obf-4005900009135",
-      "brand": "NIVEA",
-      "name": "Soft Moisturizing Cream",
-      "status": "missing"
-    },
-    {
-      "id": "obf-3337872418587",
-      "brand": "La Roche-Posay",
-      "name": "Lipikar AP+M Triple Repair Moisturizing Cream",
-      "status": "missing"
-    },
-    {
-      "id": "obf-0381371151059",
-      "brand": "Aveeno",
-      "name": "Eczema Therapy Daily Moisturizing Cream",
-      "status": "missing"
-    },
-    {
-      "id": "obf-3401395376935",
-      "brand": "Bioderma",
-      "name": "Sébium H2O Purifying Micellar Water",
-      "status": "missing"
-    },
-    {
-      "id": "obf-9005800273464",
-      "brand": "NIVEA",
-      "name": "MicellAIR Skin Breathe Micellar Water",
-      "status": "missing"
-    },
-    {
-      "id": "obf-3600523329847",
-      "brand": "L’Oréal Paris",
-      "name": "Micellar Water",
-      "status": "missing"
+      "status": "pending"
     },
     {
       "id": "obf-0021457610105",

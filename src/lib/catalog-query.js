@@ -1,12 +1,14 @@
 import {allVerifiedOffers,catalogPrice} from './pricing';
 import {isPlaceholderImage} from './catalog-schema';
-import {dictionaries,premiumBrands} from '../i18n';
+import {brandTier} from './product-traits';
+import {careCopy} from '../careI18n';
+import {dictionaries} from '../i18n';
 export const PAGE_SIZE=18;
 export function normalizedSearch(value){return String(value).normalize('NFKD').toLowerCase().replace(/\p{M}/gu,'').replace(/ı/g,'i').replace(/\s+/g,' ').trim();}
 export function indexCatalog(products){return products.map(product=>{
  const offers=allVerifiedOffers(product);
- return {product,search:normalizedSearch([product.name,product.brand,product.category,...Object.values(product.description),...product.shades.map(s=>s.name),...Object.values(dictionaries).map(d=>d[product.category])].join(' ')),
- offers,price:catalogPrice(product),tier:product.brand_tier||(premiumBrands.includes(product.brand)?'premium':'affordable')};
+ return {product,search:normalizedSearch([product.name,product.brand,product.category,...Object.values(product.description),...product.shades.map(s=>s.name),...Object.values(dictionaries).flatMap(d=>[d[product.category],d[product.finish],...product.skin_type.map(s=>d[s])]),...Object.values(careCopy).map(d=>d[product.coverage])].join(' ')),
+ offers,price:catalogPrice(product),tier:brandTier(product)};
 });}
 export function queryCatalog(index,{view='discover',favorites=[],category='all',query='',filters,sort='recommended'}){
  const terms=normalizedSearch(query).split(' ').filter(Boolean),favoriteIds=new Set(favorites);
@@ -19,6 +21,7 @@ export function queryCatalog(index,{view='discover',favorites=[],category='all',
   (filters.availability==='all'||(filters.availability==='inStock'?offers.some(o=>o.online_available===true||o.physical_available===true):filters.availability==='outOfStock'?offers.some(o=>o.online_available===false&&o.physical_available===false):!offers.length))&&
   (!activePrice||price!==null)&&
   (filters.min===''||price>=Number(filters.min))&&(filters.max===''||price<=Number(filters.max))&&
+  (!filters.finish?.length||filters.finish.includes(p.finish))&&(!filters.coverage?.length||filters.coverage.includes(p.coverage))&&
   (!filters.skin.length||filters.skin.some(s=>p.skin_type.includes(s)))&&(!filters.tier.length||filters.tier.includes(tier))
  ).sort((a,b)=>{
   if(sort==='priceAsc'||sort==='priceDesc'){

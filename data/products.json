@@ -4,7 +4,7 @@
     "brand": "Maybelline",
     "name": "Lash Sensational Sky High Mascara",
     "category": "mascara",
-    "price_azn": null,
+    "price_azn": 18.28,
     "rating": null,
     "image": "/products/imported/54f5785c4f4dd29a38589a75.webp",
     "skin_type": [],
@@ -114,6 +114,28 @@
         "neutral_border": 0.6885416666666667,
         "checked_at": "2026-10-22T18:13:51.468Z"
       }
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "offers": [
+      {
+        "id": "olivia-00-00006151",
+        "name": "Olivia",
+        "price_azn": 20.29,
+        "currency": "AZN",
+        "market": "AZ",
+        "shade": "Very Black",
+        "size": "7,2ml",
+        "online_available": true,
+        "physical_available": null,
+        "url": "https://olivia.az/maybelline-sky-high-tus",
+        "sourceUrl": "https://olivia.az/maybelline-sky-high-tus",
+        "last_checked": "2026-10-23",
+        "verified": true
+      }
     ]
   },
   {
@@ -121,9 +143,9 @@
     "brand": "NYX",
     "name": "Epic Ink Liner",
     "category": "eyeliner",
-    "price_azn": null,
+    "price_azn": 19,
     "rating": null,
-    "image": "/products/imported/952e5bae7abf62c9e478593d.webp",
+    "image": "/products/owner/39a6a1828f79f6048988c96d.webp",
     "skin_type": [],
     "finish": null,
     "description": {
@@ -136,52 +158,16 @@
         "name": "04 Milk Chocolate",
         "hex": null,
         "undertone": "unknown",
-        "image": "/products/imported/952e5bae7abf62c9e478593d.webp",
+        "image": "/products/owner/39a6a1828f79f6048988c96d.webp",
         "images": [
-          {
-            "url": "/products/imported/952e5bae7abf62c9e478593d.webp",
-            "detailUrl": "/products/imported/952e5bae7abf62c9e478593d-detail.webp",
-            "sourceUrl": "https://world.openbeautyfacts.org/product/0800897255145/nyx-professional-makeup-epic-ink-04-milk-chocolate-eyeliner",
-            "license": "CC-BY-SA-3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-            "author": "jaksel",
-            "originalUrl": "https://images.openbeautyfacts.org/images/products/080/089/725/5145/front_nl.8.full.jpg",
-            "sha256": "952e5bae7abf62c9e478593d9b01dd47f4a7827ba892d8749d5d14872a717853",
-            "source_sha256": "649544b59bedd12fe6781bfedfd87e9cad7063fd88848f2407c82e02df1ebbc9",
-            "transformation": "Resized, oriented, flattened on white and encoded as WebP",
-            "width": 66,
-            "height": 600,
-            "review": {
-              "status": "approved",
-              "method": "visual-studio-review",
-              "checked_at": "2026-10-22T18:13:51.468Z"
-            }
-          }
+          "/products/owner/39a6a1828f79f6048988c96d.webp"
         ]
       }
     ],
     "stores": [],
     "dupes": [],
     "images": [
-      {
-        "url": "/products/imported/952e5bae7abf62c9e478593d.webp",
-        "detailUrl": "/products/imported/952e5bae7abf62c9e478593d-detail.webp",
-        "sourceUrl": "https://world.openbeautyfacts.org/product/0800897255145/nyx-professional-makeup-epic-ink-04-milk-chocolate-eyeliner",
-        "license": "CC-BY-SA-3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-        "author": "jaksel",
-        "originalUrl": "https://images.openbeautyfacts.org/images/products/080/089/725/5145/front_nl.8.full.jpg",
-        "sha256": "952e5bae7abf62c9e478593d9b01dd47f4a7827ba892d8749d5d14872a717853",
-        "source_sha256": "649544b59bedd12fe6781bfedfd87e9cad7063fd88848f2407c82e02df1ebbc9",
-        "transformation": "Resized, oriented, flattened on white and encoded as WebP",
-        "width": 66,
-        "height": 600,
-        "review": {
-          "status": "approved",
-          "method": "visual-studio-review",
-          "checked_at": "2026-10-22T18:13:51.468Z"
-        }
-      }
+      "/products/owner/39a6a1828f79f6048988c96d.webp"
     ],
     "gtin": "0800897255145",
     "provenance": {
@@ -205,7 +191,7 @@
         "license": "CC-BY-SA-3.0",
         "author": "jaksel",
         "auto_approve": true,
-        "status": "approved",
+        "status": "superseded",
         "reason": "Visual studio review completed after optimization",
         "candidate": {
           "url": "/products/imported/952e5bae7abf62c9e478593d.webp",
@@ -228,19 +214,50 @@
         },
         "neutral_border": 0.7427083333333333,
         "checked_at": "2026-10-22T18:13:51.468Z"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "04 Milk Chocolate",
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/39a6a1828f79f6048988c96d.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "prod-12",
     "brand": "e.l.f.",
     "name": "Power Grip Primer",
     "category": "primer",
-    "price_azn": null,
+    "price_azn": 8.97,
     "rating": null,
     "image": "/products/imported/c1cdd7da1dfe0a5bb663fb0d.webp",
-    "skin_type": [],
-    "finish": null,
+    "skin_type": [
+      "quru",
+      "yağlı",
+      "qarışıq"
+    ],
+    "finish": "radiant",
     "description": {
       "az": "Open Beauty Facts icmasından məhsul məlumatı. Mövcud şəkillər və təsdiqlənmiş mağaza təklifləri ayrıca göstərilir.",
       "en": "Product information from the Open Beauty Facts community. Available images and verified store offers are shown separately.",
@@ -317,16 +334,26 @@
         "neutral_border": 0.7770833333333333,
         "checked_at": "2026-10-22T18:13:51.468Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "trait_source": {
+      "url": "https://www.elfcosmetics.com/power-grip-primer/82846.html",
+      "checked_at": "2026-10-23",
+      "kind": "manufacturer"
+    }
   },
   {
     "id": "prod-13",
     "brand": "CeraVe",
     "name": "Moisturising Cream",
     "category": "moisturizer",
-    "price_azn": null,
+    "price_azn": 25,
     "rating": null,
-    "image": "",
+    "image": "/products/owner/bac7d95c4072c19d20597f4e.webp",
     "skin_type": [],
     "finish": null,
     "description": {
@@ -337,7 +364,9 @@
     "shades": [],
     "stores": [],
     "dupes": [],
-    "images": [],
+    "images": [
+      "/products/owner/bac7d95c4072c19d20597f4e.webp"
+    ],
     "gtin": "3337875598996",
     "provenance": {
       "source_url": "https://world.openbeautyfacts.org/product/3337875598996/moisturising-cream-cerave",
@@ -346,7 +375,6 @@
       "license": "ODbL-1.0 / DbCL-1.0",
       "source_name": "moisturising cream"
     },
-    "size": "177 ml",
     "image_reviews": [
       {
         "variant_key": "base",
@@ -367,17 +395,44 @@
           "detailUrl": "/products/authentic/3337875598996-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/bac7d95c4072c19d20597f4e.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "prod-14",
     "brand": "Garnier",
     "name": "Micellar Cleansing Water — All-in-1 Sensitive Skin",
     "category": "makeup_remover",
-    "price_azn": null,
+    "price_azn": 6.99,
     "rating": null,
-    "image": "",
+    "image": "/products/owner/b928a3e01b8e0eb520110d8a.webp",
     "skin_type": [],
     "finish": null,
     "description": {
@@ -388,7 +443,9 @@
     "shades": [],
     "stores": [],
     "dupes": [],
-    "images": [],
+    "images": [
+      "/products/owner/b928a3e01b8e0eb520110d8a.webp"
+    ],
     "gtin": "0192828706636",
     "provenance": {
       "source_url": "https://world.openbeautyfacts.org/product/0192828706636/micellar-cleansing-water-l-oreal",
@@ -417,18 +474,47 @@
           "detailUrl": "/products/authentic/0192828706636-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/b928a3e01b8e0eb520110d8a.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-0810763030585",
     "brand": "Fenty Beauty",
     "name": "Stunna Lip Paint",
     "category": "lipstick",
-    "price_azn": null,
+    "price_azn": 78,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/7795fc0befcdb43c3d9022c8.webp",
+    "images": [
+      "/products/owner/7795fc0befcdb43c3d9022c8.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -464,15 +550,42 @@
           "sha256": "267fdbcbd617a033e6d9789846d3dcb389972b308a57ffe25878f3bba195bca6"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/7795fc0befcdb43c3d9022c8.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-0609332820050",
     "brand": "e.l.f.",
     "name": "Glow Reviver Lip Oil — Honey Talks",
     "category": "lip_gloss",
-    "price_azn": null,
+    "price_azn": 27,
     "rating": null,
     "image": "/products/imported/36c4544a51cdf46104904019.webp",
     "images": [
@@ -582,17 +695,24 @@
         "neutral_border": 0.6822916666666666,
         "checked_at": "2026-10-22T18:13:51.468Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-01678832",
     "brand": "e.l.f.",
     "name": "Eyeliner Pen — Coffee",
     "category": "eyeliner",
-    "price_azn": null,
+    "price_azn": 8.98,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/3ae040ace31164d423415633.webp",
+    "images": [
+      "/products/owner/3ae040ace31164d423415633.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -605,8 +725,10 @@
         "name": "Coffee",
         "hex": null,
         "undertone": "unknown",
-        "image": "",
-        "images": []
+        "image": "/products/owner/3ae040ace31164d423415633.webp",
+        "images": [
+          "/products/owner/3ae040ace31164d423415633.webp"
+        ]
       }
     ],
     "stores": [],
@@ -660,15 +782,42 @@
           "detailUrl": "/products/authentic/01678832-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "Coffee",
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/3ae040ace31164d423415633.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-0609332813373",
     "brand": "e.l.f.",
     "name": "No Budge Retractable Eyeliner",
     "category": "eyeliner",
-    "price_azn": null,
+    "price_azn": 11.98,
     "rating": null,
     "image": "/products/imported/b1b3d0f074fb2cb3c9aeeb4b.webp",
     "images": [
@@ -747,17 +896,24 @@
         "neutral_border": 0.609375,
         "checked_at": "2026-10-22T18:13:51.468Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-3348901607339",
     "brand": "Dior",
     "name": "Rouge Blush",
     "category": "blush",
-    "price_azn": null,
+    "price_azn": 71.96,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/cbe99e2b76582828e3072387.webp",
+    "images": [
+      "/products/owner/cbe99e2b76582828e3072387.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -765,7 +921,18 @@
       "en": "Product information from the Open Beauty Facts community. Available images and verified store offers are shown separately.",
       "ru": "Информация о товаре из сообщества Open Beauty Facts. Доступные фото и подтверждённые предложения магазинов показаны отдельно."
     },
-    "shades": [],
+    "shades": [
+      {
+        "name": "Rəngin adı 1",
+        "hex": "#e24646",
+        "undertone": "neutral",
+        "image": "/products/owner/cbe99e2b76582828e3072387.webp",
+        "images": [
+          "/products/owner/cbe99e2b76582828e3072387.webp"
+        ],
+        "identity_status": "shade-code-unverified"
+      }
+    ],
     "stores": [],
     "dupes": [],
     "gtin": "3348901607339",
@@ -797,18 +964,43 @@
           "detailUrl": "/products/authentic/3348901607339-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "Rəngin adı 1",
+        "size": "6 g",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/cbe99e2b76582828e3072387.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-3348901614900",
     "brand": "Dior",
     "name": "Forever Skin Glow Foundation",
     "category": "tonal_krem",
-    "price_azn": null,
+    "price_azn": 68.99,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/f5436b8009db15280ca45b99.webp",
+    "images": [
+      "/products/owner/f5436b8009db15280ca45b99.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -816,7 +1008,28 @@
       "en": "Product information from the Open Beauty Facts community. Available images and verified store offers are shown separately.",
       "ru": "Информация о товаре из сообщества Open Beauty Facts. Доступные фото и подтверждённые предложения магазинов показаны отдельно."
     },
-    "shades": [],
+    "shades": [
+      {
+        "name": "Rəngin adı 1",
+        "hex": "#D9A78C",
+        "undertone": "neutral",
+        "image": "/products/owner/f5436b8009db15280ca45b99.webp",
+        "images": [
+          "/products/owner/f5436b8009db15280ca45b99.webp"
+        ],
+        "identity_status": "shade-code-unverified"
+      },
+      {
+        "name": "Rəngin adı 2",
+        "hex": "#D9A78C",
+        "undertone": "neutral",
+        "image": "/products/owner/cb663290ac7ac13458df0529.webp",
+        "images": [
+          "/products/owner/cb663290ac7ac13458df0529.webp"
+        ],
+        "identity_status": "shade-code-unverified"
+      }
+    ],
     "stores": [],
     "dupes": [],
     "gtin": "3348901614900",
@@ -845,15 +1058,50 @@
           "sha256": "10f5608e8d16dd95b4030650727a9a7add3f93dafd2dfeb92d740b0fce9510c8"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "Rəngin adı 1",
+        "size": "2.7ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/f5436b8009db15280ca45b99.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
+      },
+      {
+        "variant_key": "shade-1",
+        "shade": "Rəngin adı 2",
+        "size": "2.7ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/cb663290ac7ac13458df0529.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-0800897003968",
     "brand": "NYX",
     "name": "Lip Lingerie XXL — 05 Strip’d Down",
     "category": "lipstick",
-    "price_azn": null,
+    "price_azn": 17,
     "rating": null,
     "image": "/products/imported/3c9276e56c1f239a15e4a812.webp",
     "images": [
@@ -961,14 +1209,19 @@
         "neutral_border": 0.890625,
         "checked_at": "2026-10-22T18:13:51.468Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-0800897129781",
     "brand": "NYX",
     "name": "Bare With Me Concealer Serum — 03 Vanilla",
     "category": "concealer",
-    "price_azn": null,
+    "price_azn": 35,
     "rating": null,
     "image": "/products/imported/551031f0092d5f8060899fff.webp",
     "images": [
@@ -1076,17 +1329,24 @@
         "neutral_border": 0.7927083333333333,
         "checked_at": "2026-10-22T18:13:51.468Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-0800897183714",
     "brand": "NYX",
     "name": "Can’t Stop Won’t Stop Setting Powder",
     "category": "powder",
-    "price_azn": null,
+    "price_azn": 35,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/0ca1e88406cdeedb11c43a7b.webp",
+    "images": [
+      "/products/owner/0ca1e88406cdeedb11c43a7b.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -1123,15 +1383,42 @@
           "sha256": "6e894ed8cdcfd585864b744b0356648491868aabef4294e3ef7236d626f2c8cb"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": "6 g",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/0ca1e88406cdeedb11c43a7b.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-3600531324506",
     "brand": "Maybelline",
     "name": "Fit Me Matte + Poreless",
     "category": "tonal_krem",
-    "price_azn": null,
+    "price_azn": 16.99,
     "rating": null,
     "image": "/products/imported/c3dc243e1cbd2c0197fb9547.webp",
     "images": [
@@ -1155,8 +1442,12 @@
         }
       }
     ],
-    "skin_type": [],
-    "finish": null,
+    "skin_type": [
+      "yağlı",
+      "qarışıq",
+      "həssas"
+    ],
+    "finish": "matte",
     "description": {
       "az": "Open Beauty Facts icmasından məhsul məlumatı. Mövcud şəkillər və təsdiqlənmiş mağaza təklifləri ayrıca göstərilir.",
       "en": "Product information from the Open Beauty Facts community. Available images and verified store offers are shown separately.",
@@ -1331,17 +1622,78 @@
         "neutral_border": 0.6114583333333333,
         "checked_at": "2026-10-22T18:13:51.468Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "size": "30 ml",
+    "offers": [
+      {
+        "id": "olivia-00-00006764",
+        "name": "Olivia",
+        "price_azn": 16.49,
+        "currency": "AZN",
+        "market": "AZ",
+        "shade": "110 Porcelain",
+        "size": "30 ml",
+        "online_available": true,
+        "physical_available": null,
+        "url": "https://olivia.az/tonal-krem-maybelline-fit-me-110-3600531423865",
+        "sourceUrl": "https://olivia.az/tonal-krem-maybelline-fit-me-110-3600531423865",
+        "last_checked": "2026-10-23",
+        "verified": true
+      },
+      {
+        "id": "olivia-00-00006774",
+        "name": "Olivia",
+        "price_azn": 16.49,
+        "currency": "AZN",
+        "market": "AZ",
+        "shade": "105 Natural Ivory",
+        "size": "30 ml",
+        "online_available": true,
+        "physical_available": null,
+        "url": "https://olivia.az/tonal-krem-maybelline-fit-me-105-3600531423858",
+        "sourceUrl": "https://olivia.az/tonal-krem-maybelline-fit-me-105-3600531423858",
+        "last_checked": "2026-10-23",
+        "verified": true
+      },
+      {
+        "id": "olivia-00-00004287",
+        "name": "Olivia",
+        "price_azn": 16.49,
+        "currency": "AZN",
+        "market": "AZ",
+        "shade": "115 Ivory",
+        "size": "30 ml",
+        "online_available": true,
+        "physical_available": null,
+        "url": "https://olivia.az/tonal-krem-maybelline-fit-me-115-3600531423872",
+        "sourceUrl": "https://olivia.az/tonal-krem-maybelline-fit-me-115-3600531423872",
+        "last_checked": "2026-10-23",
+        "verified": true
+      }
+    ],
+    "coverage": "medium",
+    "trait_source": {
+      "url": "https://www.maybelline.com/face-makeup/foundation-makeup/fit-me-matte-poreless-foundation",
+      "checked_at": "2026-10-23",
+      "kind": "manufacturer"
+    }
   },
   {
     "id": "obf-6902395970101",
     "brand": "Maybelline",
     "name": "SuperStay Lumi-Matte Foundation — 125",
     "category": "tonal_krem",
-    "price_azn": null,
+    "price_azn": 28,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/d24d3df619cc8dc5091c5fad.webp",
+    "images": [
+      "/products/owner/d24d3df619cc8dc5091c5fad.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -1352,10 +1704,12 @@
     "shades": [
       {
         "name": "125",
-        "hex": null,
+        "hex": "#d09a76",
         "undertone": "unknown",
-        "image": "",
-        "images": []
+        "image": "/products/owner/d24d3df619cc8dc5091c5fad.webp",
+        "images": [
+          "/products/owner/d24d3df619cc8dc5091c5fad.webp"
+        ]
       }
     ],
     "stores": [],
@@ -1410,15 +1764,42 @@
           "detailUrl": "/products/authentic/6902395970101-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "125",
+        "size": "35 ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/d24d3df619cc8dc5091c5fad.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-3600530733842",
     "brand": "Maybelline",
     "name": "Instant Age Rewind Eraser — Light",
     "category": "concealer",
-    "price_azn": null,
+    "price_azn": 19,
     "rating": null,
     "image": "/products/imported/b8be0a2409ff2b664aa288b0.webp",
     "images": [
@@ -1442,7 +1823,12 @@
         }
       }
     ],
-    "skin_type": [],
+    "skin_type": [
+      "quru",
+      "yağlı",
+      "qarışıq",
+      "həssas"
+    ],
     "finish": null,
     "description": {
       "az": "Open Beauty Facts icmasından məhsul məlumatı. Mövcud şəkillər və təsdiqlənmiş mağaza təklifləri ayrıca göstərilir.",
@@ -1526,17 +1912,29 @@
         "neutral_border": 0.815625,
         "checked_at": "2026-10-22T18:13:51.468Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "trait_source": {
+      "url": "https://www.maybelline.com/face-makeup/concealer/instant-age-rewind-eraser-dark-circles-concealer-treatment",
+      "checked_at": "2026-10-23",
+      "kind": "manufacturer"
+    }
   },
   {
     "id": "obf-0041554217964",
     "brand": "Maybelline",
     "name": "Volum’ Express The Falsies Mascara",
     "category": "mascara",
-    "price_azn": null,
+    "price_azn": 12,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/639365f8bffcf928b4930e64.webp",
+    "images": [
+      "/products/owner/639365f8bffcf928b4930e64.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -1572,18 +1970,47 @@
           "sha256": "016371c50897e22609626ba92fa67b60ad6ad5810e4ca6f07f8f5c75585236b9"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/639365f8bffcf928b4930e64.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-4250947516027",
     "brand": "Essence",
     "name": "Lash Princess False Lash Effect Mascara — Black",
     "category": "mascara",
-    "price_azn": null,
+    "price_azn": 11,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/254dcd530030e5b4e67849d8.webp",
+    "images": [
+      "/products/owner/254dcd530030e5b4e67849d8.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -1596,8 +2023,10 @@
         "name": "Black",
         "hex": null,
         "undertone": "unknown",
-        "image": "",
-        "images": []
+        "image": "/products/owner/254dcd530030e5b4e67849d8.webp",
+        "images": [
+          "/products/owner/254dcd530030e5b4e67849d8.webp"
+        ]
       }
     ],
     "stores": [],
@@ -1651,15 +2080,42 @@
           "detailUrl": "/products/authentic/4250947516027-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "Black",
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/254dcd530030e5b4e67849d8.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-4059729441973",
     "brand": "Essence",
     "name": "Call Me Queen False Lash Mascara",
     "category": "mascara",
-    "price_azn": null,
+    "price_azn": 8,
     "rating": null,
     "image": "/products/imported/603b04d878a0ed46231c654c.webp",
     "images": [
@@ -1740,14 +2196,19 @@
         "neutral_border": 0.5979166666666667,
         "checked_at": "2026-10-22T18:13:51.468Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-4059729447395",
     "brand": "Essence",
     "name": "Baby Got Blush Liquid Blush — 30 Dusty Rose",
     "category": "blush",
-    "price_azn": null,
+    "price_azn": 14.99,
     "rating": null,
     "image": "/products/imported/dc4dfce8e96d94bf8433303f.webp",
     "images": [
@@ -1857,17 +2318,24 @@
         "neutral_border": 0.6354166666666666,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-4059729421937",
     "brand": "Essence",
     "name": "Hydra Kiss Lip Oil — 03",
     "category": "lip_gloss",
-    "price_azn": null,
+    "price_azn": 15.97,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/4dbb82b18afc9a3a469ac320.webp",
+    "images": [
+      "/products/owner/4dbb82b18afc9a3a469ac320.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -1880,8 +2348,10 @@
         "name": "03",
         "hex": null,
         "undertone": "unknown",
-        "image": "",
-        "images": []
+        "image": "/products/owner/4dbb82b18afc9a3a469ac320.webp",
+        "images": [
+          "/products/owner/4dbb82b18afc9a3a469ac320.webp"
+        ]
       }
     ],
     "stores": [],
@@ -1936,18 +2406,47 @@
           "detailUrl": "/products/authentic/4059729421937-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "03",
+        "size": "4ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/4dbb82b18afc9a3a469ac320.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-4059729302809",
     "brand": "Essence",
     "name": "Extreme Shine Volume Lipgloss — 01 Crystal Clear",
     "category": "lip_gloss",
-    "price_azn": null,
+    "price_azn": 8.01,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/28fd2ec3e090d59aa0bdf859.webp",
+    "images": [
+      "/products/owner/28fd2ec3e090d59aa0bdf859.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -1960,8 +2459,10 @@
         "name": "01 Crystal Clear",
         "hex": null,
         "undertone": "unknown",
-        "image": "",
-        "images": []
+        "image": "/products/owner/28fd2ec3e090d59aa0bdf859.webp",
+        "images": [
+          "/products/owner/28fd2ec3e090d59aa0bdf859.webp"
+        ]
       }
     ],
     "stores": [],
@@ -2016,18 +2517,47 @@
           "detailUrl": "/products/authentic/4059729302809-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "01 Crystal Clear",
+        "size": "5ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/28fd2ec3e090d59aa0bdf859.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-4250587735543",
     "brand": "Essence",
     "name": "All About Matt! Fixing Compact Powder",
     "category": "powder",
-    "price_azn": null,
+    "price_azn": 14.97,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/f672ef6b39eab20a99704ce6.webp",
+    "images": [
+      "/products/owner/f672ef6b39eab20a99704ce6.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -2066,18 +2596,47 @@
           "detailUrl": "/products/authentic/4250587735543-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/f672ef6b39eab20a99704ce6.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-4250587772173",
     "brand": "Essence",
     "name": "Waterproof Eyeliner Pen — 01 Deep Black",
     "category": "eyeliner",
-    "price_azn": null,
+    "price_azn": 9,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/ef4f75045891b2d59e3d8127.webp",
+    "images": [
+      "/products/owner/ef4f75045891b2d59e3d8127.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -2090,8 +2649,10 @@
         "name": "01 Deep Black",
         "hex": null,
         "undertone": "unknown",
-        "image": "",
-        "images": []
+        "image": "/products/owner/ef4f75045891b2d59e3d8127.webp",
+        "images": [
+          "/products/owner/ef4f75045891b2d59e3d8127.webp"
+        ]
       }
     ],
     "stores": [],
@@ -2146,18 +2707,47 @@
           "detailUrl": "/products/authentic/4250587772173-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "01 Deep Black",
+        "size": "1 ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/ef4f75045891b2d59e3d8127.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-0773602736850",
     "brand": "MAC",
     "name": "Studio Fix Powder Plus Foundation — NC13",
     "category": "powder",
-    "price_azn": null,
+    "price_azn": 38,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/0ad6f12c6f5b7578ee669f7d.webp",
+    "images": [
+      "/products/owner/0ad6f12c6f5b7578ee669f7d.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -2170,8 +2760,10 @@
         "name": "NC13",
         "hex": null,
         "undertone": "unknown",
-        "image": "",
-        "images": []
+        "image": "/products/owner/0ad6f12c6f5b7578ee669f7d.webp",
+        "images": [
+          "/products/owner/0ad6f12c6f5b7578ee669f7d.webp"
+        ]
       }
     ],
     "stores": [],
@@ -2226,18 +2818,47 @@
           "detailUrl": "/products/authentic/0773602736850-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "NC13",
+        "size": "12 g",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/0ad6f12c6f5b7578ee669f7d.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-0773602657070",
     "brand": "MAC",
     "name": "Studio Radiance 24HR Luminous Lift Concealer — NC11",
     "category": "concealer",
-    "price_azn": null,
+    "price_azn": 28.94,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/0b85f824ff5f90ba873d1f8f.webp",
+    "images": [
+      "/products/owner/0b85f824ff5f90ba873d1f8f.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -2250,8 +2871,10 @@
         "name": "NC11",
         "hex": null,
         "undertone": "unknown",
-        "image": "",
-        "images": []
+        "image": "/products/owner/0b85f824ff5f90ba873d1f8f.webp",
+        "images": [
+          "/products/owner/0b85f824ff5f90ba873d1f8f.webp"
+        ]
       }
     ],
     "stores": [],
@@ -2306,37 +2929,46 @@
           "detailUrl": "/products/authentic/0773602657070-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "NC11",
+        "size": "11ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/0b85f824ff5f90ba873d1f8f.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-0773602544172",
     "brand": "MAC",
     "name": "Matte Lipstick — 650 Soar",
     "category": "lipstick",
-    "price_azn": null,
+    "price_azn": 44.95,
     "rating": null,
-    "image": "/products/imported/4610313b910ca11caa72a5b7.webp",
+    "image": "/products/owner/fda9517c48c102c62f550a0f.webp",
     "images": [
-      {
-        "url": "/products/imported/4610313b910ca11caa72a5b7.webp",
-        "detailUrl": "/products/imported/4610313b910ca11caa72a5b7-detail.webp",
-        "sourceUrl": "https://world.openbeautyfacts.org/product/0773602544172/matte-lipstick-650-soar-mac",
-        "license": "CC-BY-SA-3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-        "author": "thaialagata",
-        "originalUrl": "https://images.openbeautyfacts.org/images/products/077/360/254/4172/front_en.8.full.jpg",
-        "sha256": "4610313b910ca11caa72a5b7686eb34248e8ac6c9d9143ea62d641ef6c5f7c97",
-        "source_sha256": "6028e457b9a4f3354f7689f9fdf9967cd10d57b5fa691b022339baa529e0086b",
-        "transformation": "Resized, oriented, flattened on white and encoded as WebP",
-        "width": 1000,
-        "height": 739,
-        "review": {
-          "status": "approved",
-          "method": "visual-studio-review",
-          "checked_at": "2026-10-22T18:13:51.469Z"
-        }
-      }
+      "/products/owner/fda9517c48c102c62f550a0f.webp"
     ],
     "skin_type": [],
     "finish": null,
@@ -2350,27 +2982,9 @@
         "name": "650 Soar",
         "hex": null,
         "undertone": "unknown",
-        "image": "/products/imported/4610313b910ca11caa72a5b7.webp",
+        "image": "/products/owner/fda9517c48c102c62f550a0f.webp",
         "images": [
-          {
-            "url": "/products/imported/4610313b910ca11caa72a5b7.webp",
-            "detailUrl": "/products/imported/4610313b910ca11caa72a5b7-detail.webp",
-            "sourceUrl": "https://world.openbeautyfacts.org/product/0773602544172/matte-lipstick-650-soar-mac",
-            "license": "CC-BY-SA-3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-            "author": "thaialagata",
-            "originalUrl": "https://images.openbeautyfacts.org/images/products/077/360/254/4172/front_en.8.full.jpg",
-            "sha256": "4610313b910ca11caa72a5b7686eb34248e8ac6c9d9143ea62d641ef6c5f7c97",
-            "source_sha256": "6028e457b9a4f3354f7689f9fdf9967cd10d57b5fa691b022339baa529e0086b",
-            "transformation": "Resized, oriented, flattened on white and encoded as WebP",
-            "width": 1000,
-            "height": 739,
-            "review": {
-              "status": "approved",
-              "method": "visual-studio-review",
-              "checked_at": "2026-10-22T18:13:51.469Z"
-            }
-          }
+          "/products/owner/fda9517c48c102c62f550a0f.webp"
         ]
       }
     ],
@@ -2398,7 +3012,7 @@
         "license": "CC-BY-SA-3.0",
         "author": "thaialagata",
         "auto_approve": true,
-        "status": "approved",
+        "status": "superseded",
         "reason": "Visual studio review completed after optimization",
         "candidate": {
           "url": "/products/imported/4610313b910ca11caa72a5b7.webp",
@@ -2421,15 +3035,42 @@
         },
         "neutral_border": 0.31979166666666664,
         "checked_at": "2026-10-22T18:13:51.469Z"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "650 Soar",
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/fda9517c48c102c62f550a0f.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-0607845023180",
     "brand": "NARS",
     "name": "Pure Radiant Tinted Moisturizer SPF 30",
     "category": "tonal_krem",
-    "price_azn": null,
+    "price_azn": 56,
     "rating": null,
     "image": "/products/imported/9520aa198731f3a5d29dc09b.webp",
     "images": [
@@ -2508,36 +3149,23 @@
         "neutral_border": 0.5125,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-4250947598283",
     "brand": "Catrice",
     "name": "HD Liquid Coverage Foundation",
     "category": "tonal_krem",
-    "price_azn": null,
+    "price_azn": 18.97,
     "rating": null,
-    "image": "/products/imported/0e24a834b70bb9ff8366a37c.webp",
+    "image": "/products/owner/0c5599ed305928f7d5907ace.webp",
     "images": [
-      {
-        "url": "/products/imported/0e24a834b70bb9ff8366a37c.webp",
-        "detailUrl": "/products/imported/0e24a834b70bb9ff8366a37c-detail.webp",
-        "sourceUrl": "https://world.openbeautyfacts.org/product/4250947598283/catrice-hd-010-light-beige-liquid-coverage-foundation",
-        "license": "CC-BY-SA-3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-        "author": "jaksel",
-        "originalUrl": "https://images.openbeautyfacts.org/images/products/425/094/759/8283/front_nl.15.full.jpg",
-        "sha256": "0e24a834b70bb9ff8366a37cccb6bb4ce44e0f3d6138dafc8488823688d65f66",
-        "source_sha256": "b6d6c44bffb5191e4789999e14e4817402902e86a8c80a41de18c6063fce4680",
-        "transformation": "Resized, oriented, flattened on white and encoded as WebP",
-        "width": 464,
-        "height": 568,
-        "review": {
-          "status": "approved",
-          "method": "visual-studio-review",
-          "checked_at": "2026-10-22T18:13:51.469Z"
-        }
-      }
+      "/products/owner/0c5599ed305928f7d5907ace.webp"
     ],
     "skin_type": [],
     "finish": null,
@@ -2551,27 +3179,9 @@
         "name": "010 Light Beige",
         "hex": null,
         "undertone": "unknown",
-        "image": "/products/imported/0e24a834b70bb9ff8366a37c.webp",
+        "image": "/products/owner/0c5599ed305928f7d5907ace.webp",
         "images": [
-          {
-            "url": "/products/imported/0e24a834b70bb9ff8366a37c.webp",
-            "detailUrl": "/products/imported/0e24a834b70bb9ff8366a37c-detail.webp",
-            "sourceUrl": "https://world.openbeautyfacts.org/product/4250947598283/catrice-hd-010-light-beige-liquid-coverage-foundation",
-            "license": "CC-BY-SA-3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-            "author": "jaksel",
-            "originalUrl": "https://images.openbeautyfacts.org/images/products/425/094/759/8283/front_nl.15.full.jpg",
-            "sha256": "0e24a834b70bb9ff8366a37cccb6bb4ce44e0f3d6138dafc8488823688d65f66",
-            "source_sha256": "b6d6c44bffb5191e4789999e14e4817402902e86a8c80a41de18c6063fce4680",
-            "transformation": "Resized, oriented, flattened on white and encoded as WebP",
-            "width": 464,
-            "height": 568,
-            "review": {
-              "status": "approved",
-              "method": "visual-studio-review",
-              "checked_at": "2026-10-22T18:13:51.469Z"
-            }
-          }
+          "/products/owner/0c5599ed305928f7d5907ace.webp"
         ]
       },
       {
@@ -2606,27 +3216,9 @@
         "name": "030 Sand Beige",
         "hex": null,
         "undertone": "unknown",
-        "image": "/products/imported/bf15f8c5ef9fa19a316e2875.webp",
+        "image": "/products/owner/521ebe91000a89c8c9143487.webp",
         "images": [
-          {
-            "url": "/products/imported/bf15f8c5ef9fa19a316e2875.webp",
-            "detailUrl": "/products/imported/bf15f8c5ef9fa19a316e2875-detail.webp",
-            "sourceUrl": "https://world.openbeautyfacts.org/product/4250947598306/catrice-hd-030-sand-beige-liquid-coverage-foundation",
-            "license": "CC-BY-SA-3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-            "author": "jaksel",
-            "originalUrl": "https://images.openbeautyfacts.org/images/products/425/094/759/8306/front_nl.10.full.jpg",
-            "sha256": "bf15f8c5ef9fa19a316e2875533d7be3849b011fa1ceb75841b8d0a96eb430f5",
-            "source_sha256": "a28e5e0053f7f2b88bae4a27f818ecd58cb176cc24158735d4d3975dac7caff0",
-            "transformation": "Resized, oriented, flattened on white and encoded as WebP",
-            "width": 464,
-            "height": 568,
-            "review": {
-              "status": "approved",
-              "method": "visual-studio-review",
-              "checked_at": "2026-10-22T18:13:51.469Z"
-            }
-          }
+          "/products/owner/521ebe91000a89c8c9143487.webp"
         ],
         "gtin": "4250947598306"
       }
@@ -2657,7 +3249,7 @@
         "license": "CC-BY-SA-3.0",
         "author": "jaksel",
         "auto_approve": true,
-        "status": "approved",
+        "status": "superseded",
         "reason": "Visual studio review completed after optimization",
         "candidate": {
           "url": "/products/imported/0e24a834b70bb9ff8366a37c.webp",
@@ -2694,7 +3286,7 @@
         "license": "CC-BY-SA-3.0",
         "author": "jaksel",
         "auto_approve": true,
-        "status": "approved",
+        "status": "superseded",
         "reason": "Visual studio review completed after optimization",
         "candidate": {
           "url": "/products/imported/2c78c27e82a70da09439489f.webp",
@@ -2731,7 +3323,7 @@
         "license": "CC-BY-SA-3.0",
         "author": "jaksel",
         "auto_approve": true,
-        "status": "approved",
+        "status": "superseded",
         "reason": "Visual studio review completed after optimization",
         "candidate": {
           "url": "/products/imported/bf15f8c5ef9fa19a316e2875.webp",
@@ -2754,15 +3346,50 @@
         },
         "neutral_border": 0.88125,
         "checked_at": "2026-10-22T18:13:51.469Z"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "010 Light Beige",
+        "size": "30ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/0c5599ed305928f7d5907ace.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
+      },
+      {
+        "variant_key": "shade-2",
+        "shade": "030 Sand Beige",
+        "size": "30ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/521ebe91000a89c8c9143487.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-3600522862529",
     "brand": "L’Oréal Paris",
     "name": "True Match Foundation",
     "category": "tonal_krem",
-    "price_azn": null,
+    "price_azn": 25.98,
     "rating": null,
     "image": "/products/imported/0603a407841d5e3613ea8aa8.webp",
     "images": [
@@ -2872,14 +3499,19 @@
         "neutral_border": 0.91875,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-3600523614431",
     "brand": "L’Oréal Paris",
     "name": "Infaillible 32H Fresh Wear Foundation",
     "category": "tonal_krem",
-    "price_azn": null,
+    "price_azn": 22.97,
     "rating": null,
     "image": "/products/imported/c80f073afb57512e5fb405cb.webp",
     "images": [
@@ -2989,14 +3621,19 @@
         "neutral_border": 0.721875,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-4059729282026",
     "brand": "Catrice",
     "name": "True Skin Hydrating Foundation",
     "category": "tonal_krem",
-    "price_azn": null,
+    "price_azn": 13.98,
     "rating": null,
     "image": "/products/imported/8fc6b726bbd73c4381f89f0d.webp",
     "images": [
@@ -3075,17 +3712,24 @@
         "neutral_border": 0.26979166666666665,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-0309975415018",
     "brand": "Revlon",
     "name": "ColorStay Foundation",
     "category": "tonal_krem",
-    "price_azn": null,
+    "price_azn": 8.98,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/c70f4815ccf605a21b834406.webp",
+    "images": [
+      "/products/owner/c70f4815ccf605a21b834406.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -3098,8 +3742,10 @@
         "name": "110 Ivory",
         "hex": null,
         "undertone": "unknown",
-        "image": "",
-        "images": []
+        "image": "/products/owner/c70f4815ccf605a21b834406.webp",
+        "images": [
+          "/products/owner/c70f4815ccf605a21b834406.webp"
+        ]
       }
     ],
     "stores": [],
@@ -3148,15 +3794,42 @@
           "sha256": "225647719dc285552ceef1163fb5c87df764e9fff403810ec7c06afa0fe62661"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "110 Ivory",
+        "size": "30 ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/c70f4815ccf605a21b834406.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-3616303397173",
     "brand": "Bourjois",
     "name": "Healthy Mix Foundation",
     "category": "tonal_krem",
-    "price_azn": null,
+    "price_azn": 13,
     "rating": null,
     "image": "/products/imported/3fae11b8e596e47b3ac0a754.webp",
     "images": [
@@ -3235,14 +3908,19 @@
         "neutral_border": 0.8479166666666667,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-0773602040605",
     "brand": "MAC",
     "name": "Retro Matte Lipstick",
     "category": "lipstick",
-    "price_azn": null,
+    "price_azn": 65,
     "rating": null,
     "image": "/products/imported/6ee4e8d97dcd9dc147dd21aa.webp",
     "images": [
@@ -3350,14 +4028,19 @@
         "neutral_border": 0.625,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-3600531469498",
     "brand": "Maybelline",
     "name": "SuperStay Matte Ink",
     "category": "lipstick",
-    "price_azn": null,
+    "price_azn": 26.97,
     "rating": null,
     "image": "/products/imported/0fbd6a5a48588ee7a71ff68f.webp",
     "images": [
@@ -3597,14 +4280,19 @@
         "neutral_border": 0.7135416666666666,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-3600523957408",
     "brand": "L’Oréal Paris",
     "name": "Color Riche Intense Lipstick",
     "category": "lipstick",
-    "price_azn": null,
+    "price_azn": 36.98,
     "rating": null,
     "image": "/products/imported/9521cc01e7075726290eaf55.webp",
     "images": [
@@ -3712,14 +4400,19 @@
         "neutral_border": 0.5958333333333333,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-0086100013614",
     "brand": "Max Factor",
     "name": "Lipfinity Lip Colour",
     "category": "lipstick",
-    "price_azn": null,
+    "price_azn": 5.3,
     "rating": null,
     "image": "/products/imported/8aa5a2a8af6b841fbba6675b.webp",
     "images": [
@@ -3829,14 +4522,19 @@
         "neutral_border": 0.509375,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-3614273962100",
     "brand": "Lancôme",
     "name": "L’Absolu Rouge Drama Matte",
     "category": "lipstick",
-    "price_azn": null,
+    "price_azn": 89,
     "rating": null,
     "image": "/products/imported/d3a3ecb439cc469a4f0a77d6.webp",
     "images": [
@@ -3944,14 +4642,19 @@
         "neutral_border": 0.5291666666666667,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-30148093",
     "brand": "Maybelline",
     "name": "SuperStay Vinyl Ink",
     "category": "lipstick",
-    "price_azn": null,
+    "price_azn": 21.99,
     "rating": null,
     "image": "/products/imported/fbc66764006e4e04ea975c76.webp",
     "images": [
@@ -4061,17 +4764,24 @@
         "neutral_border": 0.49375,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-8690644035722",
     "brand": "Pastel",
     "name": "Profashion Matte Lipstick",
     "category": "lipstick",
-    "price_azn": null,
+    "price_azn": 7.16,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/adf736476fb51237aeb1ea8c.webp",
+    "images": [
+      "/products/owner/adf736476fb51237aeb1ea8c.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -4084,8 +4794,10 @@
         "name": "572 Desert",
         "hex": null,
         "undertone": "unknown",
-        "image": "",
-        "images": []
+        "image": "/products/owner/adf736476fb51237aeb1ea8c.webp",
+        "images": [
+          "/products/owner/adf736476fb51237aeb1ea8c.webp"
+        ]
       }
     ],
     "stores": [],
@@ -4139,15 +4851,42 @@
           "detailUrl": "/products/authentic/8690644035722-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "572 Desert",
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/adf736476fb51237aeb1ea8c.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-3600521627402",
     "brand": "L’Oréal Paris",
     "name": "True Match Blush",
     "category": "blush",
-    "price_azn": null,
+    "price_azn": 18.05,
     "rating": null,
     "image": "/products/imported/66929bc7e1d82fa4529985f5.webp",
     "images": [
@@ -4255,14 +4994,19 @@
         "neutral_border": 0.775,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-4059729277084",
     "brand": "Catrice",
     "name": "True Skin High Cover Concealer",
     "category": "concealer",
-    "price_azn": null,
+    "price_azn": 15.99,
     "rating": null,
     "image": "/products/imported/6b097f616aa41a3512fa7405.webp",
     "images": [
@@ -4372,14 +5116,19 @@
         "neutral_border": 0.9104166666666667,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-30096592",
     "brand": "Maybelline",
     "name": "Fit Me Concealer",
     "category": "concealer",
-    "price_azn": null,
+    "price_azn": 17.99,
     "rating": null,
     "image": "/products/imported/1c2bf0a7e1bd7e4438901b6b.webp",
     "images": [
@@ -4403,8 +5152,13 @@
         }
       }
     ],
-    "skin_type": [],
-    "finish": null,
+    "skin_type": [
+      "quru",
+      "yağlı",
+      "qarışıq",
+      "həssas"
+    ],
+    "finish": "natural",
     "description": {
       "az": "Open Beauty Facts icmasından məhsul məlumatı. Mövcud şəkillər və təsdiqlənmiş mağaza təklifləri ayrıca göstərilir.",
       "en": "Product information from the Open Beauty Facts community. Available images and verified store offers are shown separately.",
@@ -4487,14 +5241,24 @@
         "neutral_border": 0.675,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "trait_source": {
+      "url": "https://www.maybelline.com/face-makeup/concealer/fit-me-concealer",
+      "checked_at": "2026-10-23",
+      "kind": "manufacturer"
+    }
   },
   {
     "id": "obf-30149649",
     "brand": "L’Oréal Paris",
     "name": "Panorama Mascara",
     "category": "mascara",
-    "price_azn": null,
+    "price_azn": 28.99,
     "rating": null,
     "image": "/products/imported/42736ff6891da22c6d5de365.webp",
     "images": [
@@ -4604,19 +5368,29 @@
         "neutral_border": 0.828125,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-3600531384173",
     "brand": "Maybelline",
     "name": "Fit Me Matte + Poreless Powder",
     "category": "powder",
-    "price_azn": null,
+    "price_azn": 18.99,
     "rating": null,
-    "image": "",
-    "images": [],
-    "skin_type": [],
-    "finish": null,
+    "image": "/products/owner/9c0ce2670fe51bdd71137928.webp",
+    "images": [
+      "/products/owner/9c0ce2670fe51bdd71137928.webp"
+    ],
+    "skin_type": [
+      "yağlı",
+      "qarışıq"
+    ],
+    "finish": "matte",
     "description": {
       "az": "Open Beauty Facts icmasından məhsul məlumatı. Mövcud şəkillər və təsdiqlənmiş mağaza təklifləri ayrıca göstərilir.",
       "en": "Product information from the Open Beauty Facts community. Available images and verified store offers are shown separately.",
@@ -4627,8 +5401,10 @@
         "name": "115 Ivory",
         "hex": null,
         "undertone": "unknown",
-        "image": "",
-        "images": []
+        "image": "/products/owner/9c0ce2670fe51bdd71137928.webp",
+        "images": [
+          "/products/owner/9c0ce2670fe51bdd71137928.webp"
+        ]
       }
     ],
     "stores": [],
@@ -4682,15 +5458,48 @@
           "detailUrl": "/products/authentic/3600531384173-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "115 Ivory",
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/9c0ce2670fe51bdd71137928.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    },
+    "coverage": "medium",
+    "trait_source": {
+      "url": "https://www.maybelline.com/face-makeup/powder/fit-me-matte-poreless-powder",
+      "checked_at": "2026-10-23",
+      "kind": "manufacturer"
+    }
   },
   {
     "id": "obf-3600531609726",
     "brand": "Maybelline",
     "name": "Lifter Gloss",
     "category": "lip_gloss",
-    "price_azn": null,
+    "price_azn": 17,
     "rating": null,
     "image": "/products/imported/48ae07c4be631845e4db4fa8.webp",
     "images": [
@@ -4930,6 +5739,43 @@
         "neutral_border": 0.734375,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "offers": [
+      {
+        "id": "olivia-00-00004331",
+        "name": "Olivia",
+        "price_azn": 16.79,
+        "currency": "AZN",
+        "market": "AZ",
+        "shade": "004 Silk",
+        "size": "5,4ml",
+        "online_available": true,
+        "physical_available": null,
+        "url": "https://olivia.az/dodaq-parladici-maybelline-lifter-gloss-004-3600531609726",
+        "sourceUrl": "https://olivia.az/dodaq-parladici-maybelline-lifter-gloss-004-3600531609726",
+        "last_checked": "2026-10-23",
+        "verified": true
+      },
+      {
+        "id": "olivia-00-00004330",
+        "name": "Olivia",
+        "price_azn": 16.79,
+        "currency": "AZN",
+        "market": "AZ",
+        "shade": "2 Ice",
+        "size": "5,4ml",
+        "online_available": true,
+        "physical_available": null,
+        "url": "https://olivia.az/dodaq-parladici-maybelline-lifter-gloss-002-3600531609764",
+        "sourceUrl": "https://olivia.az/dodaq-parladici-maybelline-lifter-gloss-002-3600531609764",
+        "last_checked": "2026-10-23",
+        "verified": true
+      }
     ]
   },
   {
@@ -4937,7 +5783,7 @@
     "brand": "NYX",
     "name": "Butter Gloss",
     "category": "lip_gloss",
-    "price_azn": null,
+    "price_azn": 32.98,
     "rating": null,
     "image": "/products/imported/ba9a8e77e3e6584b0fce5d50.webp",
     "images": [
@@ -5047,14 +5893,19 @@
         "neutral_border": 0.6854166666666667,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-4059729274953",
     "brand": "Catrice",
     "name": "24H Brush Liner Waterproof Eyeliner",
     "category": "eyeliner",
-    "price_azn": null,
+    "price_azn": 8.99,
     "rating": null,
     "image": "/products/imported/f55e3b6636af20474705662c.webp",
     "images": [
@@ -5164,36 +6015,34 @@
         "neutral_border": 0.8645833333333334,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-4059729518613",
-    "brand": "Essence",
+    "brand": "Sheglam",
     "name": "Birthday Primer",
     "category": "primer",
-    "price_azn": null,
+    "price_azn": 33.98,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/c6b65651f6f0b1566af23e2f.webp",
+    "images": [
+      "/products/owner/c6b65651f6f0b1566af23e2f.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
-      "az": "Open Beauty Facts icmasından məhsul məlumatı. Mövcud şəkillər və təsdiqlənmiş mağaza təklifləri ayrıca göstərilir.",
-      "en": "Product information from the Open Beauty Facts community. Available images and verified store offers are shown separately.",
-      "ru": "Информация о товаре из сообщества Open Beauty Facts. Доступные фото и подтверждённые предложения магазинов показаны отдельно."
+      "az": "Sayt sahibinin SHEGLAM kimi əlavə etdiyi praymer. Dəqiq model və həcm təsdiq gözləyir.",
+      "en": "Primer entered by the site owner as SHEGLAM. Exact model and size await verification.",
+      "ru": "Праймер указан владельцем как товар бренда «Шеглам». Модель и объём требуют проверки."
     },
     "shades": [],
     "stores": [],
     "dupes": [],
-    "gtin": "4059729518613",
-    "provenance": {
-      "source_url": "https://world.openbeautyfacts.org/product/4059729518613/birthday-primer-essence",
-      "retrieved_at": "2026-10-22",
-      "kind": "community",
-      "license": "ODbL-1.0 / DbCL-1.0",
-      "source_name": "Birthday Primer"
-    },
-    "size": "10ml",
     "image_reviews": [
       {
         "variant_key": "base",
@@ -5214,15 +6063,44 @@
           "detailUrl": "/products/authentic/4059729518613-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/c6b65651f6f0b1566af23e2f.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "offers": [],
+    "identity_status": "owner-brand-change-needs-source",
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-4059729222978",
     "brand": "Catrice",
     "name": "Ten!sational 10 in 1 Dream Primer",
     "category": "primer",
-    "price_azn": null,
+    "price_azn": 10.99,
     "rating": null,
     "image": "/products/imported/497b22ba85579b48c2bf4e31.webp",
     "images": [
@@ -5301,14 +6179,19 @@
         "neutral_border": 0.9885416666666667,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-3380810185249",
     "brand": "Clarins",
     "name": "SOS Primer",
     "category": "primer",
-    "price_azn": null,
+    "price_azn": 5.99,
     "rating": null,
     "image": "/products/imported/e48daf06dc10c070b4adde33.webp",
     "images": [
@@ -5418,17 +6301,24 @@
         "neutral_border": 0.9458333333333333,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-0769915190762",
     "brand": "The Ordinary",
     "name": "High-Adherence Silicone Primer",
     "category": "primer",
-    "price_azn": null,
+    "price_azn": 55,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/5edb430935a63b0d171889da.webp",
+    "images": [
+      "/products/owner/5edb430935a63b0d171889da.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -5465,15 +6355,42 @@
           "sha256": "906daed31c863df87d326dc500b90b07474dd4d81b889fcb9e4aac248ac3f78f"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": "30 ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/5edb430935a63b0d171889da.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-8682536043670",
     "brand": "Flormar",
     "name": "Mood Booster Liquid Highlighter",
     "category": "highlighter",
-    "price_azn": null,
+    "price_azn": 13.99,
     "rating": null,
     "image": "/products/imported/9a036865ecca048f2d90c340.webp",
     "images": [
@@ -5581,14 +6498,19 @@
         "neutral_border": 0.9104166666666667,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-8690644003226",
     "brand": "Pastel",
     "name": "Profashion Stardust Highlighter",
     "category": "highlighter",
-    "price_azn": null,
+    "price_azn": 8.97,
     "rating": null,
     "image": "/products/imported/fa26f8f6c516d4ef31f87660.webp",
     "images": [
@@ -5696,14 +6618,19 @@
         "neutral_border": 0.584375,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-0044386120174",
     "brand": "Physicians Formula",
     "name": "Butter Highlighter",
     "category": "highlighter",
-    "price_azn": null,
+    "price_azn": 19.97,
     "rating": null,
     "image": "/products/imported/92a8743649a2df9ee0593cb7.webp",
     "images": [
@@ -5811,14 +6738,19 @@
         "neutral_border": 0.7229166666666667,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-4059729514998",
     "brand": "Catrice",
     "name": "Diamond Haze Highlighter",
     "category": "highlighter",
-    "price_azn": null,
+    "price_azn": 6.99,
     "rating": null,
     "image": "/products/imported/485f2d58572afa529b251d6a.webp",
     "images": [
@@ -5926,14 +6858,19 @@
         "neutral_border": 0.6822916666666666,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-0609332844155",
     "brand": "e.l.f.",
     "name": "Halo Glow Highlight Beauty Wand",
     "category": "highlighter",
-    "price_azn": null,
+    "price_azn": 13.99,
     "rating": null,
     "image": "/products/imported/1c6ac18d2e624fa09adb0bd0.webp",
     "images": [
@@ -6238,17 +7175,24 @@
         "neutral_border": 0.8395833333333333,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-0302993917564",
     "brand": "Cetaphil",
     "name": "Moisturizing Cream",
     "category": "moisturizer",
-    "price_azn": null,
+    "price_azn": 8.98,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/db1ac2317710fcc1d8ab34d3.webp",
+    "images": [
+      "/products/owner/db1ac2317710fcc1d8ab34d3.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -6288,18 +7232,47 @@
           "detailUrl": "/products/authentic/0302993917564-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": "16 oz",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/db1ac2317710fcc1d8ab34d3.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-4005900009135",
     "brand": "NIVEA",
     "name": "Soft Moisturizing Cream",
     "category": "moisturizer",
-    "price_azn": null,
+    "price_azn": 10.99,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/a2afb493e1098eff06b3ffcc.webp",
+    "images": [
+      "/products/owner/a2afb493e1098eff06b3ffcc.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -6339,18 +7312,47 @@
           "detailUrl": "/products/authentic/4005900009135-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": "100 ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/a2afb493e1098eff06b3ffcc.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-3337872418587",
     "brand": "La Roche-Posay",
     "name": "Lipikar AP+M Triple Repair Moisturizing Cream",
     "category": "moisturizer",
-    "price_azn": null,
+    "price_azn": 55.97,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/3b320cfd7e2654a1c0b243b0.webp",
+    "images": [
+      "/products/owner/3b320cfd7e2654a1c0b243b0.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -6390,18 +7392,47 @@
           "detailUrl": "/products/authentic/3337872418587-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": "200ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/3b320cfd7e2654a1c0b243b0.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-0381371151059",
     "brand": "Aveeno",
     "name": "Eczema Therapy Daily Moisturizing Cream",
     "category": "moisturizer",
-    "price_azn": null,
+    "price_azn": 29,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/469f4bbd71551abed33880fd.webp",
+    "images": [
+      "/products/owner/469f4bbd71551abed33880fd.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -6438,18 +7469,47 @@
           "sha256": "ef9fb3ac6f6bf4ef8a71fb42221021dab94a2392f8cda50aca60aedf9f722f16"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": "5oz 141g",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/469f4bbd71551abed33880fd.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-3401395376935",
     "brand": "Bioderma",
     "name": "Sébium H2O Purifying Micellar Water",
     "category": "makeup_remover",
-    "price_azn": null,
+    "price_azn": 42,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/6acb0a79c01d9459af4bb1ad.webp",
+    "images": [
+      "/products/owner/6acb0a79c01d9459af4bb1ad.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -6489,15 +7549,42 @@
           "detailUrl": "/products/authentic/3401395376935-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": "100 ml",
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/6acb0a79c01d9459af4bb1ad.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-8710908371509",
     "brand": "Simple",
     "name": "Micellar Cleansing Water",
     "category": "makeup_remover",
-    "price_azn": null,
+    "price_azn": 8.05,
     "rating": null,
     "image": "/products/imported/efc6fb2beca8caad07ab9f8d.webp",
     "images": [
@@ -6576,17 +7663,24 @@
         "neutral_border": 0.8625,
         "checked_at": "2026-10-22T18:13:51.469Z"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   },
   {
     "id": "obf-9005800273464",
     "brand": "NIVEA",
     "name": "MicellAIR Skin Breathe Micellar Water",
     "category": "makeup_remover",
-    "price_azn": null,
+    "price_azn": 15.99,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/f3d4b58b59586380bf9c540f.webp",
+    "images": [
+      "/products/owner/f3d4b58b59586380bf9c540f.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -6625,18 +7719,47 @@
           "detailUrl": "/products/authentic/9005800273464-detail.jpg"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/f3d4b58b59586380bf9c540f.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-3600523329847",
     "brand": "L’Oréal Paris",
     "name": "Micellar Water",
     "category": "makeup_remover",
-    "price_azn": null,
+    "price_azn": 11.7,
     "rating": null,
-    "image": "",
-    "images": [],
+    "image": "/products/owner/1984e1545c0c96691f1732ae.webp",
+    "images": [
+      "/products/owner/1984e1545c0c96691f1732ae.webp"
+    ],
     "skin_type": [],
     "finish": null,
     "description": {
@@ -6672,37 +7795,46 @@
           "sha256": "2443ce8fe67cf34cac31f80caf2c3b9f5f29fba3836d87afdbc38eba83f12d07"
         },
         "checked_at": "2026-10-22"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/1984e1545c0c96691f1732ae.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-3600531537289",
     "brand": "Maybelline",
     "name": "Fit Me Blush",
     "category": "blush",
-    "price_azn": null,
+    "price_azn": 13.99,
     "rating": null,
-    "image": "/products/imported/d0977bc389dcf07bf1d39c7b.webp",
+    "image": "/products/owner/481f751f1a5611b3055025fd.webp",
     "images": [
-      {
-        "url": "/products/imported/d0977bc389dcf07bf1d39c7b.webp",
-        "detailUrl": "/products/imported/d0977bc389dcf07bf1d39c7b-detail.webp",
-        "sourceUrl": "https://world.openbeautyfacts.org/product/3600531537289/maybelline-blush-fit-me-peach-40-l-oreal-norge-as",
-        "license": "CC-BY-SA-3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-        "author": "Open Beauty Facts contributors (see source)",
-        "originalUrl": "https://images.openbeautyfacts.org/images/products/360/053/153/7289/front_en.3.400.jpg",
-        "sha256": "d0977bc389dcf07bf1d39c7b15da47e870732749c32b821ce6fc88b187b3fe07",
-        "source_sha256": "cbd0a54ffbc92d84d609752485c765576b1fe99e16e5043ca328aa15082c4777",
-        "transformation": "Resized, oriented, flattened on white and encoded as WebP",
-        "width": 376,
-        "height": 400,
-        "review": {
-          "status": "approved",
-          "method": "visual-studio-review",
-          "checked_at": "2026-10-22T18:13:51.469Z"
-        }
-      }
+      "/products/owner/481f751f1a5611b3055025fd.webp"
     ],
     "skin_type": [],
     "finish": null,
@@ -6716,27 +7848,9 @@
         "name": "40 Peach",
         "hex": null,
         "undertone": "unknown",
-        "image": "/products/imported/d0977bc389dcf07bf1d39c7b.webp",
+        "image": "/products/owner/481f751f1a5611b3055025fd.webp",
         "images": [
-          {
-            "url": "/products/imported/d0977bc389dcf07bf1d39c7b.webp",
-            "detailUrl": "/products/imported/d0977bc389dcf07bf1d39c7b-detail.webp",
-            "sourceUrl": "https://world.openbeautyfacts.org/product/3600531537289/maybelline-blush-fit-me-peach-40-l-oreal-norge-as",
-            "license": "CC-BY-SA-3.0",
-            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-            "author": "Open Beauty Facts contributors (see source)",
-            "originalUrl": "https://images.openbeautyfacts.org/images/products/360/053/153/7289/front_en.3.400.jpg",
-            "sha256": "d0977bc389dcf07bf1d39c7b15da47e870732749c32b821ce6fc88b187b3fe07",
-            "source_sha256": "cbd0a54ffbc92d84d609752485c765576b1fe99e16e5043ca328aa15082c4777",
-            "transformation": "Resized, oriented, flattened on white and encoded as WebP",
-            "width": 376,
-            "height": 400,
-            "review": {
-              "status": "approved",
-              "method": "visual-studio-review",
-              "checked_at": "2026-10-22T18:13:51.469Z"
-            }
-          }
+          "/products/owner/481f751f1a5611b3055025fd.webp"
         ]
       }
     ],
@@ -6764,7 +7878,7 @@
         "license": "CC-BY-SA-3.0",
         "author": "Open Beauty Facts contributors (see source)",
         "auto_approve": true,
-        "status": "approved",
+        "status": "superseded",
         "reason": "Visual studio review completed after optimization",
         "candidate": {
           "url": "/products/imported/d0977bc389dcf07bf1d39c7b.webp",
@@ -6787,37 +7901,46 @@
         },
         "neutral_border": 0.053125,
         "checked_at": "2026-10-22T18:13:51.469Z"
+      },
+      {
+        "variant_key": "shade-0",
+        "shade": "40 Peach",
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/481f751f1a5611b3055025fd.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "shade-0"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-4059729446794",
     "brand": "Essence",
     "name": "Blush Crush",
     "category": "blush",
-    "price_azn": null,
+    "price_azn": 24,
     "rating": null,
-    "image": "/products/imported/e3ad2ae854e4753566b01ef5.webp",
+    "image": "/products/owner/0ac823eb24f7d820d88b9f26.webp",
     "images": [
-      {
-        "url": "/products/imported/e3ad2ae854e4753566b01ef5.webp",
-        "detailUrl": "/products/imported/e3ad2ae854e4753566b01ef5-detail.webp",
-        "sourceUrl": "https://world.openbeautyfacts.org/product/4059729446794/blush-crush-essence",
-        "license": "CC-BY-SA-3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-        "author": "mitxina",
-        "originalUrl": "https://images.openbeautyfacts.org/images/products/405/972/944/6794/front_ar.7.full.jpg",
-        "sha256": "e3ad2ae854e4753566b01ef5cc6336c3bbd2e143b9dae09275f2b0f45ca78ac1",
-        "source_sha256": "71acdcc9039179150c611d3ea3de858db0dc2777ebb413bfabfa9a6a17f3e0b2",
-        "transformation": "Resized, oriented, flattened on white and encoded as WebP",
-        "width": 340,
-        "height": 340,
-        "review": {
-          "status": "approved",
-          "method": "visual-studio-review",
-          "checked_at": "2026-10-22T18:13:51.469Z"
-        }
-      }
+      "/products/owner/0ac823eb24f7d820d88b9f26.webp"
     ],
     "skin_type": [],
     "finish": null,
@@ -6850,7 +7973,7 @@
         "license": "CC-BY-SA-3.0",
         "author": "mitxina",
         "auto_approve": true,
-        "status": "approved",
+        "status": "superseded",
         "reason": "Visual studio review completed after optimization",
         "candidate": {
           "url": "/products/imported/e3ad2ae854e4753566b01ef5.webp",
@@ -6873,15 +7996,42 @@
         },
         "neutral_border": 0.8770833333333333,
         "checked_at": "2026-10-22T18:13:51.469Z"
+      },
+      {
+        "variant_key": "base",
+        "shade": null,
+        "size": null,
+        "status": "needs-review",
+        "reason": "Sayt sahibinin fotosu: dəqiq rəng kodu, həcm və istifadə hüququ yoxlanmalıdır.",
+        "candidate": {
+          "url": "/products/owner/0ac823eb24f7d820d88b9f26.webp",
+          "provided_by": "site-owner",
+          "permission_status": "owner-supplied-no-third-party-license-asserted"
+        }
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    },
+    "image_override": {
+      "scope": "default-variant",
+      "variant_key": "base"
+    },
+    "owner_photo": {
+      "provided_by": "site-owner",
+      "received_at": "2026-10-23",
+      "reuse_permission": "Owner supplied for website publication; no third-party license asserted",
+      "shade_identity": "Requires exact label/source verification where not visible"
+    }
   },
   {
     "id": "obf-0021457610105",
     "brand": "Lavera",
     "name": "Mineral Compact Powder",
     "category": "powder",
-    "price_azn": null,
+    "price_azn": 17.05,
     "rating": null,
     "image": "",
     "images": [],
@@ -6947,6 +8097,11 @@
         },
         "checked_at": "2026-10-22"
       }
-    ]
+    ],
+    "price_origin": {
+      "kind": "site-owner",
+      "received_at": "2026-10-23",
+      "verified_retailer": false
+    }
   }
 ]
