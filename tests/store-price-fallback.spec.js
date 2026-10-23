@@ -1,6 +1,6 @@
 import {test,expect} from './test-base';
 import {readFileSync} from 'node:fs';
-import {comparisonOffers,verifiedOffers,productVariants} from '../src/lib/pricing';
+import {comparisonOffers,demoComparisonOffers,verifiedOffers,productVariants} from '../src/lib/pricing';
 const seed=JSON.parse(readFileSync(new URL('../data/products.json',import.meta.url),'utf8'));
 const offer=(extra={})=>({id:'exact',name:'Olivia',market:'AZ',currency:'AZN',shade:'Shade A',size:'30 ml',price_azn:35,verified:true,url:'https://olivia.az/test-product',sourceUrl:'https://olivia.az/test-product',last_checked:'2026-01-01',online_available:true,physical_available:null,...extra});
 const store=(name,price_azn)=>({name,price_azn,in_stock:true,last_checked:'2026-01-01'});
@@ -67,19 +67,20 @@ test('prod-11 falls back to its base price and never marks the reference as veri
  expect(comparisonOffers(exact,'Shade A','30 ml').some(o=>o.price_scope==='reference')).toBe(false);
 });
 
-for(const width of [390,1440])test(`prod-11 displays an active reference price row at ${width}px`,async({page})=>{
+for(const width of [390,1440])test(`prod-11 displays three sorted demo-price rows at ${width}px`,async({page})=>{
  await page.addInitScript(()=>localStorage.setItem('shiny-language','"en"'));
  await page.setViewportSize({width,height:900});await page.goto('/#product=prod-11');
  await expect(page.locator('.modal-price')).toContainText('19.00 ₼');
- const row=page.locator('.verified-offer');
- await expect(row).toHaveCount(1);await expect(row).toContainText('Olivia');
- await expect(row).toContainText('19.00 ₼');await expect(row).toHaveAttribute('data-price-scope','reference');
- await expect(row).toContainText('Reference price');await expect(row).toContainText('not a verified retailer offer');
+ const rows=page.locator('.verified-offer'),row=rows.filter({hasText:'Olivia'});
+ await expect(rows).toHaveCount(3);await expect(row).toContainText('Olivia');
+ await expect(row).toContainText('19.00 ₼');await expect(row).toHaveAttribute('data-price-scope','demo');
+ await expect(row).toContainText('Demo price');await expect(page.locator('.demo-price-notice')).toContainText('not real retailer offers');
+ await expect(rows.nth(0)).toContainText('BirMarket');await expect(rows.nth(0)).toContainText('17.86 ₼');await expect(rows.nth(2)).toContainText('20.90 ₼');
  await expect(row.getByRole('link')).toHaveAttribute('href','https://olivia.az/');
- await expect(page.locator('.lowest-badge,.no-verified-offers')).toHaveCount(0);
- await expect(page.locator('.pending-retailer')).toHaveCount(2);
- await page.locator('.modal-language').selectOption('az');await expect(row).toContainText('İstinad qiyməti');
- await page.locator('.modal-language').selectOption('ru');await expect(row).toContainText('Справочная цена');
+ await expect(page.locator('.lowest-badge')).toHaveText('Cheapest offer');await expect(page.locator('.no-verified-offers')).toHaveCount(0);
+ await expect(page.locator('.pending-retailer')).toHaveCount(0);
+ await page.locator('.modal-language').selectOption('az');await expect(row).toContainText('Demo qiymət');await expect(page.locator('.lowest-badge')).toHaveText('Ən ucuz təklif');
+ await page.locator('.modal-language').selectOption('ru');await expect(row).toContainText('Демонстрационная цена');
 });
 
 test('all catalog products and variants get a linked base-price fallback when store prices are missing',()=>{
@@ -112,14 +113,42 @@ test('all 70 database-backed modals show a linked price row without explicit sto
  for(const product of products){
   await page.evaluate(id=>{location.hash='product='+encodeURIComponent(id)},product.id);
   await expect(page.locator('#product-title')).toHaveText(product.name);
-  const row=page.locator('#store-comparison .verified-offer');
-  await expect(row,product.id).toHaveCount(1);
+  const rows=page.locator('#store-comparison .verified-offer'),row=rows.filter({hasText:'Olivia'});
+  await expect(rows,product.id).toHaveCount(3);
   await expect(row,product.id).toContainText(product.price_azn.toFixed(2)+' ₼');
-  await expect(row).toHaveAttribute('data-price-scope','reference');
+  await expect(row).toHaveAttribute('data-price-scope','demo');
   await expect(row.getByRole('link')).toHaveAttribute('href','https://olivia.az/');
   await expect(page.locator('.no-verified-offers')).toHaveCount(0);
   await page.keyboard.press('Escape');
   await expect(page.getByRole('dialog')).toHaveCount(0);
  }
  expect(errors).toEqual([]);
+});
+
+test('demo prices cover every product and variant, round to cents, and never alter source data',()=>{
+ const before=JSON.stringify(seed);
+ for(const product of seed)for(const variant of productVariants(product)){
+  const offers=demoComparisonOffers(product,variant.shade,variant.size);
+  expect(offers.length,product.id).toBeGreaterThanOrEqual(3);
+  expect(offers.map(o=>o.price_azn)).toEqual(offers.map(o=>o.price_azn).sort((a,b)=>a-b));
+  for(const offer of offers.filter(o=>o.price_scope==='demo')){
+   expect(offer.verified).toBe(false);expect(offer.last_checked).toBeUndefined();
+   expect(offer.online_available).toBeNull();expect(offer.physical_available).toBeNull();
+   expect(Number(offer.price_azn.toFixed(2))).toBe(offer.price_azn);
+  }
+ }
+ expect(demoComparisonOffers({price_azn:19},null).map(o=>[o.name,o.price_azn])).toEqual([
+  ['BirMarket',17.86],['Olivia',19],['Rossmann',20.9],
+ ]);
+ expect(demoComparisonOffers({price_azn:null},null)).toEqual([]);
+ expect(JSON.stringify(seed)).toBe(before);
+});
+
+test('real retailer quotes take priority and three real stores need no generated data',()=>{
+ const product=fixture();product.stores=[];product.price_azn=19;
+ let offers=demoComparisonOffers(product,'Shade A','30 ml');
+ expect(offers).toHaveLength(3);expect(offers.find(o=>o.name==='Olivia')).toMatchObject({price_azn:35,price_scope:'variant',verified:true});
+ product.offers.push(offer({id:'bir',name:'BirMarket',price_azn:5}),offer({id:'ross',name:'Rossmann',price_azn:7}));
+ offers=demoComparisonOffers(product,'Shade A','30 ml');
+ expect(offers.map(o=>o.price_azn)).toEqual([5,7,35]);expect(offers.every(o=>o.price_scope!=='demo')).toBe(true);
 });

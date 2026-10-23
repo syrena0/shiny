@@ -46,6 +46,24 @@ export function comparisonOffers(product,shade,size){
  }
  return [...byStore.values()].sort((a,b)=>a.price_azn-b.price_azn);
 }
+// Presentation-only rows: generated prices never enter the catalog or verified pricing.
+export function demoComparisonOffers(product,shade,size){
+ const offers=comparisonOffers(product,shade,size).filter(o=>o.price_scope!=='reference');
+ const base=numericPrice(product.price_azn);
+ if(offers.length<3&&base!==null&&base>0){
+  const multipliers={birmarket:0.94,olivia:1,rossmann:1.10};
+  for(const id of ['birmarket','olivia','rossmann']){
+   if(offers.length>=3)break;
+   const store=retailers.find(r=>r.id===id);
+   if(!store||offers.some(o=>o.name.trim().toLowerCase()===store.name.toLowerCase()))continue;
+   const price=Number((base*multipliers[id]).toFixed(2));
+   if(!Number.isFinite(price)||price<=0)continue;
+   offers.push({id:`demo-${id}`,name:store.name,price_azn:price,price_scope:'demo',
+    verified:false,url:store.url,online_available:null,physical_available:null});
+  }
+ }
+ return offers.sort((a,b)=>a.price_azn-b.price_azn);
+}
 export function productVariants(product){
  if(product.variants?.length)return product.variants.map(v=>({...v,name:v.shade??'',key:v.id}));
  if(product.shades?.length)return product.shades.map((s,index)=>({...s,gtin:s.gtin||((s.name===product.default_shade||!product.default_shade&&index===0)?product.gtin:undefined),shade:s.name,size:s.size||product.size,key:`shade-${index}`}));
