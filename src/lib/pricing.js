@@ -1,3 +1,4 @@
+import retailers from '../../data/retailers.json' with {type:'json'};
 import {isCalendarDate,isHttpsUrl} from './catalog-schema.js';
 export function numericPrice(value){
  if(typeof value==='number')return Number.isFinite(value)&&value>=0?value:null;
@@ -34,6 +35,15 @@ export function comparisonOffers(product,shade,size){
   url:isHttpsUrl(store.url)?store.url:null,online_available:null,
   physical_available:typeof store.in_stock==='boolean'?store.in_stock:null,
  });
+ const base=numericPrice(product.price_azn);
+ // Keep the owner's base price visible without claiming a retailer verified it.
+ if(!byStore.size&&base!==null){
+  const primary=retailers[0];
+  byStore.set(storeKey(primary.name),{
+   id:'product-base-reference',name:primary.name,price_azn:base,price_scope:'reference',
+   verified:false,url:null,online_available:null,physical_available:null,
+  });
+ }
  return [...byStore.values()].sort((a,b)=>a.price_azn-b.price_azn);
 }
 export function productVariants(product){

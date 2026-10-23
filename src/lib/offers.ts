@@ -9,7 +9,7 @@ export const verifiedOffers=pricing.verifiedOffers as (product:{offers?:Verified
 export const catalogPrice=pricing.catalogPrice as (product:{price_azn:number|null;offers?:VerifiedOffer[]})=>number|null;
 
 export type GeneralStore={name:string;price_azn:number;in_stock:boolean;last_checked:string;url?:string};
-export type ComparisonOffer=Omit<VerifiedOffer,'verified'|'shade'|'size'|'url'> & {
- verified:boolean;shade?:string|null;size?:string;url:string|null;price_scope:'variant'|'product';
+export type ComparisonOffer=Omit<VerifiedOffer,'verified'|'shade'|'size'|'url'|'sourceUrl'|'last_checked'> & {
+ verified:boolean;shade?:string|null;size?:string;url:string|null;price_scope:'variant'|'product'|'reference';sourceUrl?:string;last_checked?:string;
 };
-export const comparisonOffers=pricing.comparisonOffers as (product:{offers?:VerifiedOffer[];stores?:GeneralStore[]},shade?:string|null,size?:string)=>ComparisonOffer[];
+export const comparisonOffers=pricing.comparisonOffers as (product:{price_azn?:number|null;offers?:VerifiedOffer[];stores?:GeneralStore[]},shade?:string|null,size?:string)=>ComparisonOffer[];

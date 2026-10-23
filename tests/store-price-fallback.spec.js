@@ -26,7 +26,7 @@ test('general verified offers work without shade or size, with case-insensitive 
 });
 
 test('no other shade, incompatible size, invalid amount, or foreign currency becomes a fallback',()=>{
- const product=fixture();product.stores=[store('Rossmann',null),store('BirMarket',-1)];
+ const product=fixture();product.price_azn=null;product.stores=[store('Rossmann',null),store('BirMarket',-1)];
  product.offers.push(offer({id:'wrong-size',shade:null,size:'50 ml',price_azn:1}),offer({id:'foreign',shade:null,currency:'USD',price_azn:2}));
  expect(comparisonOffers(product,'Shade B','30 ml')).toEqual([]);
  expect(comparisonOffers({offers:[],stores:[]},null,undefined)).toEqual([]);
@@ -49,4 +49,35 @@ for(const width of [390,1440])test(`modal store prices update on shade selection
  await page.locator('.modal-language').selectOption('ru');await expect(olivia).toContainText('Общая цена товара');
  await page.locator('.modal-details .shade-picker button').first().click();await expect(olivia).toContainText('35,00 ₼');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)).toBe(false);
+});
+
+test('prod-11 falls back to its base price and never marks the reference as verified',()=>{
+ const product=seed.find(p=>p.id==='prod-11');
+ expect(product.price_azn).toBe(19);
+ for(const shade of [product.default_shade,'Another shade']){
+  expect(comparisonOffers(product,shade,product.size)).toEqual([expect.objectContaining({
+   name:'Olivia',price_azn:19,price_scope:'reference',verified:false,url:null,
+   online_available:null,physical_available:null,
+  })]);
+ }
+ for(const price_azn of [null,undefined,-1,'invalid'])expect(comparisonOffers({price_azn},null)).toEqual([]);
+ expect(comparisonOffers({price_azn:0},null)[0].price_azn).toBe(0);
+ expect(comparisonOffers({price_azn:'19.00'},null)[0].price_azn).toBe(19);
+ const exact=fixture();exact.price_azn=19;
+ expect(comparisonOffers(exact,'Shade A','30 ml').some(o=>o.price_scope==='reference')).toBe(false);
+});
+
+for(const width of [390,1440])test(`prod-11 displays an active reference price row at ${width}px`,async({page})=>{
+ await page.addInitScript(()=>localStorage.setItem('shiny-language','"en"'));
+ await page.setViewportSize({width,height:900});await page.goto('/#product=prod-11');
+ await expect(page.locator('.modal-price')).toContainText('19.00 ₼');
+ const row=page.locator('.verified-offer');
+ await expect(row).toHaveCount(1);await expect(row).toContainText('Olivia');
+ await expect(row).toContainText('19.00 ₼');await expect(row).toHaveAttribute('data-price-scope','reference');
+ await expect(row).toContainText('Reference price');await expect(row).toContainText('not a verified retailer offer');
+ await expect(row.getByRole('link')).toHaveAttribute('href','https://olivia.az/');
+ await expect(page.locator('.lowest-badge,.no-verified-offers')).toHaveCount(0);
+ await expect(page.locator('.pending-retailer')).toHaveCount(2);
+ await page.locator('.modal-language').selectOption('az');await expect(row).toContainText('İstinad qiyməti');
+ await page.locator('.modal-language').selectOption('ru');await expect(row).toContainText('Справочная цена');
 });
