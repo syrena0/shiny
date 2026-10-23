@@ -78,3 +78,5 @@ export function reconcilePublishedCatalog(saved){
   return validateCatalog([result],{checkReferences:false}).valid?result:previous;
  });
 }
+
+export function hasCatalogBackup(){try{return localStorage.getItem(CATALOG_KEY)!==null}catch{return false}}

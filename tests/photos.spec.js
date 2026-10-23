@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './test-base';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {reconcileBundledPhotos} from '../src/catalog';

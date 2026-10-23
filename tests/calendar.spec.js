@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './test-base';
 import {calendarMonths,resolveMonth} from '../src/data/calendar';
 import {readFileSync} from 'node:fs';
 import {verifiedOffers} from '../src/lib/offers';

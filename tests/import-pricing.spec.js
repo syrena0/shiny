@@ -1,5 +1,5 @@
 import {verificationReport} from '../src/lib/image-review';
-import {test,expect} from '@playwright/test';
+import {test,expect} from './test-base';
 import {readFileSync,mkdtempSync,writeFileSync,mkdirSync,rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';

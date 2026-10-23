@@ -1,5 +1,7 @@
 # Shiny
 
+Supabase setup, seeding and current database status: [Supabase integration](docs/SUPABASE.md).
+
 Current image import and pricing implementation: [automated imports](docs/AUTOMATED-IMPORT.md). Earlier implementation audit: [22 October 2026](docs/AUDIT-2026-10-22.md). Product data and integration requirements: [data contract](docs/DATA-CONTRACT.md).
 
 A responsive beauty and dupe comparison prototype for Azerbaijan, built with React, Vite, Tailwind CSS, and Lucide.

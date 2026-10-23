@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './test-base';
 import {readFileSync} from 'node:fs';
 import {resolveAlternatives} from '../src/lib/dupes';
 import {indexCatalog,queryCatalog} from '../src/lib/catalog-query';

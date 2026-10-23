@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './test-base';
 import {readFileSync} from 'node:fs';
 import {editMainImage,editShadeField,addProductShade,removeProductShade,primaryProductImage} from '../src/lib/product-edit';
 import {defaultVariant,variantPrice,productVariants} from '../src/lib/pricing';

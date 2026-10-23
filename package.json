@@ -14,7 +14,8 @@
     "lint": "eslint .",
     "import:feed": "node scripts/import-feed.mjs",
     "import:server": "node scripts/import-server.mjs",
-    "audit:catalog": "node scripts/audit-catalog.mjs"
+    "audit:catalog": "node scripts/audit-catalog.mjs",
+    "seed:supabase": "node scripts/seed-supabase.mjs"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.5.0",

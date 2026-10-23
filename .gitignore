@@ -6,3 +6,8 @@ test-results/
 playwright-report/
 
 .import-stage-*/
+
+.env
+.env.local
+.env.*.local
+supabase-seed-report.json

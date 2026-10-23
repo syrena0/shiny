@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './test-base';
 import {readFileSync} from 'node:fs';
 const legacy=JSON.parse(readFileSync(new URL('./fixtures/catalog-before-photos.json',import.meta.url),'utf8'));
 const bundled=JSON.parse(readFileSync(new URL('../data/products.json',import.meta.url),'utf8'));

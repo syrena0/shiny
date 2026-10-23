@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect} from './test-base';
 import {readFileSync} from 'node:fs';
 import {validateCatalog,mergeCatalog,isCalendarDate} from '../src/lib/catalog-schema';
 import {verifiedOffers} from '../src/lib/offers';
