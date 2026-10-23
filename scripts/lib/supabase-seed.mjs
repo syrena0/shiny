@@ -9,9 +9,9 @@ export function prepareSeed(products,definition){
  if(!columns?.id||!columns.catalog_id||!columns.catalog_data)throw new Error('Missing id/catalog_id/catalog_data columns. Run supabase/catalog-schema.sql first.');
  const jsonFields=['skin_type','description','shades','stores','dupes','catalog_data'];
  for(const key of jsonFields){const column=columns[key];if(column&&!['jsonb','json'].includes(column.format))throw new Error(`${key} must be JSONB (not a JSON-encoded text column). Run the schema setup/review existing column types.`);}
- const idType=columns.id.format==='uuid'?'uuid':'text';
+ const idType=columns.id.format==='uuid'?'uuid':['smallint','integer','bigint','int2','int4','int8'].includes(columns.id.format)?'identity':'text';
  return products.map(p=>{
-  const row={id:databaseId(p.id,idType),catalog_id:p.id,catalog_data:structuredClone(p)};
+  const row={...(idType==='identity'?{}:{id:databaseId(p.id,idType)}),catalog_id:p.id,catalog_data:structuredClone(p)};
   for(const key of Object.keys(p))if(key!=='id'&&columns[key])row[key]=structuredClone(p[key]);
   return row;
  });
@@ -25,7 +25,7 @@ export async function seedCatalog(config,products,{fetcher=fetch,dryRun=false}={
  // Preserve existing database primary keys (and their foreign-key relationships).
  const ids=new Map();let offset=0;
  for(;;){const lookup=new URL('/rest/v1/products',config.url);lookup.searchParams.set('select','id,catalog_id');lookup.searchParams.set('order','id.asc');lookup.searchParams.set('limit','500');lookup.searchParams.set('offset',String(offset));const existing=await fetcher(lookup,{headers,signal:AbortSignal.timeout(20000)});if(!existing.ok)throw new Error('Cannot verify existing product identities; no writes attempted.');const page=await existing.json();if(!Array.isArray(page))throw new Error('Invalid identity response; no writes attempted.');for(const row of page)if(row.catalog_id)ids.set(row.catalog_id,row.id);offset+=page.length;if(!page.length||(!existing.headers.get('content-range')&&page.length<500))break;if(offset>20000)throw new Error('Identity lookup exceeds catalog limit; no writes attempted.');}
- for(const row of rows)if(ids.has(row.catalog_id))row.id=ids.get(row.catalog_id);
+ for(const row of rows)if(Object.hasOwn(row,'id')&&ids.has(row.catalog_id))row.id=ids.get(row.catalog_id);
  const endpoint=new URL('/rest/v1/products',config.url);endpoint.searchParams.set('on_conflict','catalog_id');
  const response=await fetcher(endpoint,{method:'POST',headers:{...headers,'Content-Type':'application/json',Prefer:'resolution=merge-duplicates,return=representation'},body:JSON.stringify(rows),signal:AbortSignal.timeout(60000)});
  if(!response.ok){let code='';try{code=(await response.json()).code||''}catch{/* Do not print server responses that could contain credentials. */}throw new Error(`Seed rejected (HTTP ${response.status}${code?`, ${code}`:''}). No anonymous write policy was added. Run the exported seed SQL as project owner or supply a CLI-only elevated key through your environment.`);}
@@ -38,8 +38,14 @@ function sortJSON(value){if(Array.isArray(value))return value.map(sortJSON);if(v
 export function exportSeedSQL(products,schemaSQL){
  if(!validateCatalog(products).valid)throw new Error('Invalid catalog');
  const data=JSON.stringify(products).replaceAll("'","''");
+ let tag='$shiny_seed_'+createHash('sha256').update(data).digest('hex').slice(0,20)+'$';while(data.includes(tag))tag=tag.slice(0,-1)+'x$';
  const columns=['id','catalog_id','catalog_data',...CORE_FIELDS];
- return `-- Generated from data/products.json; review and run as project owner.\nbegin;\n${schemaSQL}\ninsert into public.products (${columns.join(',')})\nselect ${columns.map(c=>'r.'+c).join(',')}\nfrom jsonb_array_elements('${data}'::jsonb) as entry(data)\ncross join lateral jsonb_populate_record(null::public.products, entry.data || jsonb_build_object(\n 'id',case when pg_typeof((null::public.products).id)::text='uuid' then to_jsonb(md5(entry.data->>'id')::uuid) else to_jsonb(entry.data->>'id') end,\n 'catalog_id',entry.data->>'id','catalog_data',entry.data)) as r\non conflict (catalog_id) do update set ${columns.filter(c=>c!=='id'&&c!=='catalog_id').map(c=>c+'=excluded.'+c).join(',')};\ncommit;\n`;
+ const statement=identity=>{
+  const target=identity?columns.filter(c=>c!=='id'):columns;
+  const json=identity?"(entry.data - 'id') || jsonb_build_object('catalog_id',entry.data->>'id','catalog_data',entry.data)":`entry.data || jsonb_build_object('id',case when pg_typeof((null::public.products).id)::text='uuid' then to_jsonb(md5(entry.data->>'id')::uuid) else to_jsonb(entry.data->>'id') end,'catalog_id',entry.data->>'id','catalog_data',entry.data)`;
+  return `insert into public.products (${target.join(',')})\nselect ${target.map(c=>'r.'+c).join(',')}\nfrom jsonb_array_elements('${data}'::jsonb) as entry(data)\ncross join lateral jsonb_populate_record(null::public.products, ${json}) as r\non conflict (catalog_id) do update set ${columns.filter(c=>c!=='id'&&c!=='catalog_id').map(c=>c+'=excluded.'+c).join(',')};`;
+ };
+ return `-- Generated from data/products.json; run as project owner. No rows are deleted.\nbegin;\n${schemaSQL}\ndo ${tag}\nbegin\nif pg_typeof((null::public.products).id)::text in ('smallint','integer','bigint') then\n-- Leave numeric identity generation and existing primary keys unchanged.\n${statement(true)}\nelse\n${statement(false)}\nend if;\nend;\n${tag};\ncommit;\n`;
 }
 
 // New Supabase publishable keys cannot read the root OpenAPI endpoint. Inspect
@@ -62,6 +68,6 @@ async function inspectReadableColumns(config,products,fetcher,headers){
  for(const key of nested)properties[key].format='jsonb';
  const idUrl=new URL('/rest/v1/products',config.url);idUrl.searchParams.set('select','id');idUrl.searchParams.set('limit','0');idUrl.searchParams.set('id','eq.'+products[0].id);
  const idCheck=await fetcher(idUrl,{headers,signal:AbortSignal.timeout(20000)});
- if(!idCheck.ok){const error=await idCheck.json();if(error.code==='22P02'&&error.message?.includes('uuid'))properties.id.format='uuid';else throw new Error('Unsupported database primary key type; no writes attempted.');}
+ if(!idCheck.ok){const error=await idCheck.json();if(error.code==='22P02'&&error.message?.includes('uuid'))properties.id.format='uuid';else if(error.code==='22P02'&&/type (smallint|integer|bigint)/.test(error.message||''))properties.id.format=error.message.match(/type (smallint|integer|bigint)/)[1];else throw new Error('Unsupported database primary key type; no writes attempted.');}
  return {properties};
 }

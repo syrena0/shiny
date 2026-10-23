@@ -43,3 +43,10 @@ test('publishable keys can seed through read-only column probes when root OpenAP
   return response([]);
  }});expect(result.verified).toBe(true);expect(writes).toBe(1);
 });
+
+test('bigint identity tables omit numeric ids while retaining original product identifiers',async()=>{
+ const schema={properties:{...definition.properties,id:{format:'bigint'}}};
+ const rows=prepareSeed(seed,schema);expect(rows[0]).not.toHaveProperty('id');expect(rows[0].catalog_id).toBe(seed[0].id);
+ const report=await seedCatalog(config,seed,{fetcher:async(url,options)=>options.method==='POST'?response(JSON.parse(options.body).map((row,i)=>({...row,id:i+1}))):url.pathname==='/rest/v1/'?response({definitions:{products:schema}}):response([])});
+ expect(report.verified).toBe(true);const sql=exportSeedSQL(seed,'');expect(sql).toContain("('smallint','integer','bigint')");expect(sql).toContain("entry.data - 'id'");expect(sql).toContain('catalog_id,catalog_data,brand');
+});

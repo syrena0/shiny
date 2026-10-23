@@ -14,7 +14,7 @@ The production frontend reads `products` from Supabase REST. The existing design
 Run **all of `supabase/seed-products.sql`** in the project's Supabase SQL Editor as project owner. This file is generated from the current 70 records and contains one transaction:
 
 1. Add the required product columns if missing, retaining existing rows and existing primary key types.
-2. Add a unique `catalog_id` and a JSONB `catalog_data` column. Existing text or UUID database primary keys are supported; original catalog IDs remain unchanged in the app.
+2. Add a unique `catalog_id` and a JSONB `catalog_data` column. Existing text, UUID and numeric identity database primary keys are supported; original catalog IDs remain unchanged in the app.
 3. Enable RLS and create a public SELECT policy for product discovery. No anonymous INSERT, UPDATE or DELETE policies are created.
 4. Upsert all 70 catalog records with their original typed JSON arrays/objects. Repeated execution updates matching catalog IDs; it does not delete other products.
 
@@ -51,12 +51,12 @@ Admin edits retain the existing local save/preview behavior. They do **not** wri
 
 ## Actual migration status
 
-The supplied publishable key successfully returned HTTP 200 from the `products` endpoint with an empty result. Root OpenAPI returned “Secret API key required”, which is expected for the newer publishable-key format. A direct column probe confirmed `catalog_id` is missing. The CLI therefore refused to write rather than discarding extended metadata. **No remote products have been inserted by this migration yet.** Running the prepared SQL as project owner is the remaining database step; the public key cannot perform ALTER TABLE.
+The supplied publishable key successfully returned HTTP 200 from the `products` endpoint with an empty result. Root OpenAPI returned “Secret API key required”, which is expected for the newer publishable-key format. Read-only probes confirmed that `catalog_id` and `catalog_data` are missing and the existing primary key uses `bigint`. The SQL export handles this numeric identity without replacing or casting the primary key. The CLI therefore refused to write rather than discarding extended metadata. **No remote products have been inserted by this migration yet.** Running the prepared SQL as project owner is the remaining database step; the public key cannot perform ALTER TABLE.
 
 A Codex environment draft was saved adding the project domain and suggesting the two public environment variables. Saving a draft is not publication. Actual REST reads subsequently became reachable and were verified, so a live network block is no longer assumed. Browser access is independent of this execution environment's egress policy.
 
-Tests mock REST responses and never write test records to the production database. Coverage includes JSONB round trips, UUID identity, atomic upsert, RLS failures, capped pagination, malformed/empty responses, remote data overriding stale browser data, favorites, retry, SQL transaction export and private-key rejection.
+Tests mock REST responses and never write test records to the production database. Coverage includes JSONB round trips, UUID and bigint identity, atomic upsert, RLS failures, capped pagination, malformed/empty responses, remote data overriding stale browser data, favorites, retry, SQL transaction export and private-key rejection.
 
 ## Validation and rollout
 
-Lint, TypeScript, asset validation and the production build passed. All **57 Playwright tests passed against the production build**. Database writes in these tests are mocked; they do not represent a completed production migration. The upsert also preserves existing database primary keys when a catalog ID is already present. The SQL export is ready at `supabase/seed-products.sql`; the real CLI dry run stopped before writing because the required schema columns are missing.
+Lint, TypeScript, asset validation and the production build passed. All **58 Playwright tests passed against the production build**. Database writes in these tests are mocked; they do not represent a completed production migration. The upsert also preserves existing database primary keys when a catalog ID is already present. The SQL export is ready at `supabase/seed-products.sql`; the real CLI dry run stopped before writing because the required schema columns are missing.
