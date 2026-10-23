@@ -76,5 +76,44 @@
     "checked_at": "2026-10-23",
     "html_sha256": "8378b314ab512ad46e0ef39a71d60a32bbf76f7ab985b83d080a2d06cb07fb1b",
     "method": "Product JSON-LD cross-checked against visible current price and product attributes; physical store stock unknown"
+  },
+  {
+    "product_id": "obf-3600531469498",
+    "shade": "20 Pioneer",
+    "size": "5ml",
+    "url": "https://olivia.az/dodaq-boyasi-maybelline-new-york-super-stay-ink-matte-20-30168534",
+    "source_title": "Dodaq Boyası Maybelline New York Super Stay Ink Matte 20",
+    "source_sku": "00-00006142",
+    "price_azn": 20.49,
+    "online_available": true,
+    "checked_at": "2026-10-23",
+    "html_sha256": "23603e1b858fd4ccf9f5a68214f0038a264ddfe068a8f642f14a425cb30386c1",
+    "method": "Product JSON-LD cross-checked with visible current price and exact shade/volume attributes; physical stock unknown"
+  },
+  {
+    "product_id": "obf-3600531469498",
+    "shade": "15 Lover",
+    "size": "5ml",
+    "url": "https://olivia.az/dodaq-boyasi-maybelline-new-york-super-stay-ink-matte-15-30168527",
+    "source_title": "Dodaq Boyası Maybelline New York Super Stay Ink Matte 15",
+    "source_sku": "00-00006141",
+    "price_azn": 20.49,
+    "online_available": true,
+    "checked_at": "2026-10-23",
+    "html_sha256": "2d211ae29977ddf5d6775f1734f5d120cb6072ecd00bd179f81f331cc6dfc927",
+    "method": "Product JSON-LD cross-checked with visible current price and exact shade/volume attributes; physical stock unknown"
+  },
+  {
+    "product_id": "obf-30148093",
+    "shade": "25 Red-Hot",
+    "size": "4,2ml",
+    "url": "https://olivia.az/dodaq-boyasi-maybelline-super-stay-vinyl-ink-25",
+    "source_title": "Dodaq Boyası Maybelline Super Stay Vinyl Ink 25",
+    "source_sku": "00-00011742",
+    "price_azn": 20.49,
+    "online_available": true,
+    "checked_at": "2026-10-23",
+    "html_sha256": "8e95ac4ae206ae8a47f0bebffc4b05dfe97fd4881b8c9972c534dc860416b0dc",
+    "method": "Product JSON-LD cross-checked with visible current price and exact shade/volume attributes; physical stock unknown"
   }
 ]

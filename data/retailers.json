@@ -1,0 +1,5 @@
+[
+ {"id":"olivia","name":"Olivia","url":"https://olivia.az/","checked_at":"2026-10-23","research_status":"source-checked","note":"Exact shade and size offers are recorded individually, not assumed for the whole catalog."},
+ {"id":"rossmann","name":"Rossmann","url":"https://rossmann.az/","checked_at":"2026-10-23","research_status":"network-access-pending","note":"Research blocked by environment domain allowlist. No price or availability inferred."},
+ {"id":"birmarket","name":"BirMarket","url":"https://birmarket.az/","checked_at":"2026-10-23","research_status":"network-access-pending","note":"Research blocked by environment domain allowlist. No price or availability inferred."}
+]

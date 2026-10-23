@@ -1,0 +1,293 @@
+[
+  {
+    "premium_id": "obf-0810763030585",
+    "dupe_product_id": "obf-0800897003968",
+    "kind": "editorial",
+    "match_percentage": null,
+    "reason": {
+      "az": "Maye dodaq boyası formatında daha sərfəli seçimdir. Bərk pomada əvəzinə iki maye məhsulu müqayisə edə bilərsən.",
+      "en": "A lower-priced liquid lip-colour option, comparing two liquid products rather than a liquid and a bullet lipstick.",
+      "ru": "Более доступный вариант жидкой помады: сравниваются два жидких средства, а не жидкая и твёрдая помады."
+    },
+    "difference": {
+      "az": "Fenty fotosunun dəqiq rəng kodu təsdiqlənməyib. 05 Strip’d Down dəqiq rəng əvəzi deyil; tekstura və qalıcılıq eyniliyi test edilməyib.",
+      "en": "The exact Fenty shade code is unverified. 05 Strip’d Down is not an exact shade replacement; identical texture and wear have not been tested.",
+      "ru": "Точный код премиального оттенка не подтверждён. Выбранный цвет не является точной заменой; одинаковая текстура и стойкость не проверялись."
+    },
+    "sources": [
+      {
+        "name": "Fenty Beauty · Stunna Lip Paint",
+        "url": "https://world.openbeautyfacts.org/product/0810763030585/stunna-lip-paint-fenty-beauty"
+      },
+      {
+        "name": "NYX · Lip Lingerie XXL — 05 Strip’d Down",
+        "url": "https://world.openbeautyfacts.org/product/0800897003968/nyx-lipstick"
+      }
+    ],
+    "checked_at": "2026-10-23",
+    "alternative_shade": "20 Pioneer",
+    "method": "Editorial category and product-format comparison. Not a tested formula or exact shade equivalence; no match percentage invented."
+  },
+  {
+    "premium_id": "obf-3348901607339",
+    "dupe_product_id": "obf-3600521627402",
+    "kind": "editorial",
+    "match_percentage": null,
+    "reason": {
+      "az": "Ənlik kateqoriyasında büdcəyə uyğun başqa seçimdir. Yanaqlara rəng vermək üçün iki məhsulu müqayisə edə bilərsən.",
+      "en": "A budget option in the blush category. Compare these two products for adding colour to the cheeks.",
+      "ru": "Более доступный вариант в категории румян. Оба товара можно рассмотреть для добавления цвета щекам."
+    },
+    "difference": {
+      "az": "Dior rəng kodu hələ məlum deyil. 145 Bois de Rose üçün dəqiq rəng, parlaqlıq və piqment uyğunluğu təsdiqlənməyib.",
+      "en": "The Dior shade code is still unknown. An exact colour, shimmer or pigmentation match to 145 Bois de Rose has not been established.",
+      "ru": "Код премиального оттенка пока неизвестен. Точное совпадение цвета, сияния и пигментации с выбранными румянами не подтверждено."
+    },
+    "sources": [
+      {
+        "name": "Dior · Rouge Blush",
+        "url": "https://world.openbeautyfacts.org/product/3348901607339/rouge-blush-dior"
+      },
+      {
+        "name": "L’Oréal Paris · True Match Blush",
+        "url": "https://world.openbeautyfacts.org/product/3600521627402/l-oreal-blush-true-match-bois-de-rose-145-l-oreal-norge-as"
+      }
+    ],
+    "checked_at": "2026-10-23",
+    "method": "Editorial category and product-format comparison. Not a tested formula or exact shade equivalence; no match percentage invented."
+  },
+  {
+    "premium_id": "obf-3348901614900",
+    "dupe_product_id": "obf-3616303397173",
+    "kind": "editorial",
+    "match_percentage": null,
+    "reason": {
+      "az": "Maye tonal krem kateqoriyasında daha münasib qiymətli seçimdir. Tonal bazaya daha az büdcə ayırmaq istəyənlər üçün müqayisə variantıdır.",
+      "en": "A lower-priced choice in the liquid foundation category, worth comparing when looking for a more affordable base.",
+      "ru": "Более доступный вариант в категории жидких тональных средств для сравнения при выборе основы."
+    },
+    "difference": {
+      "az": "Formula, örtücülük və dəriyə uyğunluq ayrıca yoxlanmalıdır. Dior üçün əlavə edilmiş rəng adları istehsalçı kodları ilə təsdiqlənməyib.",
+      "en": "Formula, coverage and skin compatibility need separate checks. The entered Dior shade names have not been verified against manufacturer codes.",
+      "ru": "Формулу, покрытие и совместимость с кожей нужно проверять отдельно. Введённые оттенки премиального средства не подтверждены кодами производителя."
+    },
+    "sources": [
+      {
+        "name": "Dior · Forever Skin Glow Foundation",
+        "url": "https://world.openbeautyfacts.org/product/3348901614900/dior-forever-skin-glow-24hr-wear-radiant-foundation-perfection-hydration-spf20-pa"
+      },
+      {
+        "name": "Bourjois · Healthy Mix Foundation",
+        "url": "https://world.openbeautyfacts.org/product/3616303397173/healthy-mix-foundation-bourjois"
+      }
+    ],
+    "checked_at": "2026-10-23",
+    "method": "Editorial category and product-format comparison. Not a tested formula or exact shade equivalence; no match percentage invented."
+  },
+  {
+    "premium_id": "obf-3348901614900",
+    "dupe_product_id": "obf-4059729282026",
+    "kind": "editorial",
+    "match_percentage": null,
+    "reason": {
+      "az": "Tonal krem kateqoriyasında daha sərfəli alternativ xəttidir. Dəqiq rəngi seçməzdən əvvəl hər iki formulu müqayisə et.",
+      "en": "A more affordable foundation line. Compare the two formulas before selecting an exact shade.",
+      "ru": "Более доступная линейка тональных средств. Сравните обе формулы перед выбором оттенка."
+    },
+    "difference": {
+      "az": "Dəqiq rəng və bitiş uyğunluğu test edilməyib. Catrice rəng məlumatı olmadığından rəng əvəzi təklif edilmir.",
+      "en": "Exact shade and finish equivalence have not been tested. With no Catrice shade recorded, this is not an exact colour replacement.",
+      "ru": "Точное совпадение оттенка и финиша не проверялось. Без указанного оттенка это не замена конкретному цвету."
+    },
+    "sources": [
+      {
+        "name": "Dior · Forever Skin Glow Foundation",
+        "url": "https://world.openbeautyfacts.org/product/3348901614900/dior-forever-skin-glow-24hr-wear-radiant-foundation-perfection-hydration-spf20-pa"
+      },
+      {
+        "name": "Catrice · True Skin Hydrating Foundation",
+        "url": "https://world.openbeautyfacts.org/product/4059729282026/true-skin-hydrating-foundation-catrice"
+      }
+    ],
+    "checked_at": "2026-10-23",
+    "method": "Editorial category and product-format comparison. Not a tested formula or exact shade equivalence; no match percentage invented."
+  },
+  {
+    "premium_id": "obf-0773602736850",
+    "dupe_product_id": "obf-3600531384173",
+    "kind": "editorial",
+    "match_percentage": null,
+    "reason": {
+      "az": "Kompakt pudra formatında daha sərfəli seçimdir. Üz makiyajında pudra mərhələsi üçün müqayisə edilə bilər.",
+      "en": "A lower-priced compact powder option to compare for the powder step of face makeup.",
+      "ru": "Более доступная компактная пудра для сравнения на этапе нанесения пудры."
+    },
+    "difference": {
+      "az": "MAC pudra-tonal vasitədir; Maybelline pudrasının örtücülüyü və funksiyası eyni deyil. NC13 və 115 Ivory üçün dəqiq rəng uyğunluğu təsdiqlənməyib.",
+      "en": "MAC is a powder foundation; Maybelline powder does not have identical coverage or function. NC13 and 115 Ivory are not verified exact shade matches.",
+      "ru": "Премиальный товар является тональной пудрой; покрытие и функции доступной пудры отличаются. Точное совпадение выбранных оттенков не подтверждено."
+    },
+    "sources": [
+      {
+        "name": "MAC · Studio Fix Powder Plus Foundation — NC13",
+        "url": "https://world.openbeautyfacts.org/product/0773602736850/studio-fix-powder-plus-foundation-nc13-mac"
+      },
+      {
+        "name": "Maybelline · Fit Me Matte + Poreless Powder",
+        "url": "https://world.openbeautyfacts.org/product/3600531384173/maybelline-powder-fit-me-matte-poreless-ivory-l-oreal-norge-as"
+      },
+      {
+        "name": "Maybelline · manufacturer",
+        "url": "https://www.maybelline.com/face-makeup/powder/fit-me-matte-poreless-powder"
+      }
+    ],
+    "checked_at": "2026-10-23",
+    "method": "Editorial category and product-format comparison. Not a tested formula or exact shade equivalence; no match percentage invented."
+  },
+  {
+    "premium_id": "obf-0773602657070",
+    "dupe_product_id": "obf-30096592",
+    "kind": "editorial",
+    "match_percentage": null,
+    "reason": {
+      "az": "Konsiler kateqoriyasında daha az büdcə tələb edən seçimdir. Fit Me üçün təbii bitiş və dəri tipləri istehsalçı mənbəyi ilə göstərilib.",
+      "en": "A lower-priced concealer option. Fit Me natural finish and skin-type information are backed by a manufacturer source.",
+      "ru": "Более доступный консилер. Естественный финиш и типы кожи для него указаны по данным производителя."
+    },
+    "difference": {
+      "az": "Serum teksturası, örtücülük və qulluq xüsusiyyətləri eyni sayılmır. NC11 və 15 Fair rəngləri dəqiq əvəz kimi yoxlanılmayıb.",
+      "en": "Serum texture, coverage and skincare properties are not assumed identical. NC11 and 15 Fair have not been tested as exact shade replacements.",
+      "ru": "Сходство сывороточной текстуры, покрытия и ухаживающих свойств не предполагается. Точное совпадение выбранных оттенков не проверялось."
+    },
+    "sources": [
+      {
+        "name": "MAC · Studio Radiance 24HR Luminous Lift Concealer — NC11",
+        "url": "https://world.openbeautyfacts.org/product/0773602657070/studio-radiance-24hr-luminous-lift-concealer-nc11-mac"
+      },
+      {
+        "name": "Maybelline · Fit Me Concealer",
+        "url": "https://world.openbeautyfacts.org/product/30096592/maybelline-fit-me-concealer-fair-15-l-oreal"
+      },
+      {
+        "name": "Maybelline · manufacturer",
+        "url": "https://www.maybelline.com/face-makeup/concealer/fit-me-concealer"
+      }
+    ],
+    "checked_at": "2026-10-23",
+    "method": "Editorial category and product-format comparison. Not a tested formula or exact shade equivalence; no match percentage invented."
+  },
+  {
+    "premium_id": "obf-0773602657070",
+    "dupe_product_id": "obf-4059729277084",
+    "kind": "editorial",
+    "match_percentage": null,
+    "reason": {
+      "az": "Konsiler kateqoriyasında başqa münasib qiymətli seçimdir. Hər iki məhsulun öz rəng və həcm məlumatı ayrıca göstərilir.",
+      "en": "Another affordable concealer option. Each product retains its own shade and size information.",
+      "ru": "Ещё один доступный консилер. Для каждого товара отдельно показаны его оттенок и объём."
+    },
+    "difference": {
+      "az": "NC11 və Cool Cashmere eyni rəng kimi təqdim edilmir. Formula, alt ton və bitiş eyniliyi təsdiqlənməyib.",
+      "en": "NC11 and Cool Cashmere are not presented as the same shade. Identical formulas, undertones and finish have not been verified.",
+      "ru": "Выбранные оттенки не представлены как одинаковые. Совпадение формулы, подтона и финиша не подтверждено."
+    },
+    "sources": [
+      {
+        "name": "MAC · Studio Radiance 24HR Luminous Lift Concealer — NC11",
+        "url": "https://world.openbeautyfacts.org/product/0773602657070/studio-radiance-24hr-luminous-lift-concealer-nc11-mac"
+      },
+      {
+        "name": "Catrice · True Skin High Cover Concealer",
+        "url": "https://world.openbeautyfacts.org/product/4059729277084/true-skin-high-cover-concealer-catrice"
+      }
+    ],
+    "checked_at": "2026-10-23",
+    "method": "Editorial category and product-format comparison. Not a tested formula or exact shade equivalence; no match percentage invented."
+  },
+  {
+    "premium_id": "obf-0773602544172",
+    "dupe_product_id": "obf-0800897003968",
+    "kind": "editorial",
+    "match_percentage": null,
+    "reason": {
+      "az": "Dodaq boyası kateqoriyasında daha sərfəli seçimdir. Bərk pomada ilə maye dodaq rəngi arasında seçim üçün müqayisə təqdim edilir.",
+      "en": "A lower-priced lip-colour option, comparing a bullet lipstick with a liquid lip colour.",
+      "ru": "Более доступный вариант для губ: сравнение твёрдой помады и жидкого средства."
+    },
+    "difference": {
+      "az": "650 Soar və 05 Strip’d Down rəngləri fərqlidir. Bu, dəqiq rəng əvəzi deyil; tətbiq forması və formula da fərqlənir.",
+      "en": "650 Soar and 05 Strip’d Down are different colours. This is not an exact shade replacement; application and formulas differ.",
+      "ru": "Это разные цвета, а не точная замена оттенка. Способ нанесения и формулы тоже отличаются."
+    },
+    "sources": [
+      {
+        "name": "MAC · Matte Lipstick — 650 Soar",
+        "url": "https://world.openbeautyfacts.org/product/0773602544172/matte-lipstick-650-soar-mac"
+      },
+      {
+        "name": "NYX · Lip Lingerie XXL — 05 Strip’d Down",
+        "url": "https://world.openbeautyfacts.org/product/0800897003968/nyx-lipstick"
+      }
+    ],
+    "checked_at": "2026-10-23",
+    "method": "Editorial category and product-format comparison. Not a tested formula or exact shade equivalence; no match percentage invented."
+  },
+  {
+    "premium_id": "obf-0773602040605",
+    "dupe_product_id": "obf-3600531469498",
+    "kind": "editorial",
+    "match_percentage": null,
+    "reason": {
+      "az": "Qırmızı, mat dodaq görünüşü üçün daha sərfəli seçimdir. Ruby Woo ilə müqayisə üçün nude deyil, 20 Pioneer rəngi seçilib.",
+      "en": "A lower-priced choice for a red matte lip. Shade 20 Pioneer, rather than a nude shade, is selected to compare with Ruby Woo.",
+      "ru": "Более доступный вариант красного матового макияжа губ. Для сравнения выбран красный оттенок «Пионер», а не бежевый."
+    },
+    "difference": {
+      "az": "MAC bərk pomada, Maybelline maye formuladır. Qırmızının alt tonu, tekstura və qalıcılığın eyni olması laboratoriya və ya istifadəçi testi ilə təsdiqlənməyib.",
+      "en": "MAC is a bullet lipstick and Maybelline is liquid. Identical red undertones, texture and wear have not been established by laboratory or wear testing.",
+      "ru": "Одна помада твёрдая, другая жидкая. Одинаковый подтон красного, текстура и стойкость не подтверждены лабораторными или пользовательскими испытаниями."
+    },
+    "sources": [
+      {
+        "name": "MAC · Retro Matte Lipstick",
+        "url": "https://world.openbeautyfacts.org/product/0773602040605/mac-retro-matte-lipstick-ruby-woo-mac-cosmetics"
+      },
+      {
+        "name": "Maybelline · SuperStay Matte Ink",
+        "url": "https://world.openbeautyfacts.org/product/0041554496925"
+      }
+    ],
+    "checked_at": "2026-10-23",
+    "alternative_shade": "20 Pioneer",
+    "method": "Editorial category and product-format comparison. Not a tested formula or exact shade equivalence; no match percentage invented."
+  },
+  {
+    "premium_id": "obf-3614273962100",
+    "dupe_product_id": "obf-3600531469498",
+    "kind": "editorial",
+    "match_percentage": null,
+    "reason": {
+      "az": "Mat dodaq makiyajı üçün daha sərfəli məhsul xəttidir. Hazırda kataloqda olan 65 Seductress ayrıca rəng kimi göstərilir.",
+      "en": "A lower-priced product line for matte lips. The catalog shade 65 Seductress is shown as its own colour.",
+      "ru": "Более доступная линейка для матового макияжа губ. Указанный оттенок рассматривается как отдельный цвет."
+    },
+    "difference": {
+      "az": "230 Unleash The Drama ilə dəqiq rəng uyğunluğu təsdiqlənməyib. Lancôme bərk pomada, Maybelline isə maye formuladır.",
+      "en": "An exact shade match to 230 Unleash The Drama has not been verified. Lancôme is a bullet lipstick and Maybelline is liquid.",
+      "ru": "Точное совпадение с премиальным оттенком не подтверждено. Формат твёрдой помады отличается от жидкой формулы."
+    },
+    "sources": [
+      {
+        "name": "Lancôme · L’Absolu Rouge Drama Matte",
+        "url": "https://world.openbeautyfacts.org/product/3614273962100/l-absolu-rouge-drama-matte-lipstick-230-unleash-the-drama-lancome"
+      },
+      {
+        "name": "Maybelline · SuperStay Matte Ink",
+        "url": "https://world.openbeautyfacts.org/product/3600531469498/superstay-matte-ink-65-seductress-l-oreal-norge-as"
+      }
+    ],
+    "checked_at": "2026-10-23",
+    "alternative_shade": "65 Seductress",
+    "method": "Editorial category and product-format comparison. Not a tested formula or exact shade equivalence; no match percentage invented."
+  }
+]

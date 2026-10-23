@@ -62,7 +62,7 @@ export function reconcileBundledPhotos(saved){
 }
 
 export function reconcilePublishedCatalog(saved){
- const published=new Map(seedProducts.map(p=>[p.id,p]));
+ const published=new Map(seedProducts.map(p=>[p.id,p])),savedIds=new Set(saved.map(p=>p.id));
  return saved.map(previous=>{
   const current=published.get(previous.id),baseline=publication.fields[previous.id];
   if(!current||!baseline)return previous;
@@ -70,7 +70,7 @@ export function reconcilePublishedCatalog(saved){
   let result={...previous};
   for(const key of new Set([...Object.keys(baseline),...Object.keys(current)])){
    const unchanged=baseline[key]===undefined?previous[key]===undefined:legacyFingerprint(previous[key])===baseline[key];
-   if(unchanged){if(key in current)result[key]=structuredClone(current[key]);else delete result[key];}
+   if(unchanged){if(key in current)result[key]=structuredClone(key==='dupes'?current[key].filter(d=>savedIds.has(d.dupe_product_id)):current[key]);else delete result[key];}
   }
   // A custom main upload must not be hidden by a legacy default-shade gallery.
   const first=result.shades.find(s=>s.name===result.default_shade)||result.shades[0];
