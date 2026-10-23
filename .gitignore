@@ -11,3 +11,8 @@ playwright-report/
 .env.local
 .env.*.local
 supabase-seed-report.json
+
+.venv/
+__pycache__/
+*.pyc
+data/scraped_product_raw.json
